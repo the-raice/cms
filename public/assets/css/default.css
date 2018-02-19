@@ -1,0 +1,470 @@
+@import url(../fonts/BloggerSans.css);
+@import url(../fonts/SF-UI-Display-Thin.css);
+@import url(../fonts/SF-UI-Display-Light.css);
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+* {
+    
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    
+    min-width: 768px;
+    line-height: 44px;
+    color: rgb(42, 42, 42);
+    font-family: 'SF-UI-Display-Thin' !IMPORTANT;
+    overflow-x: hidden;
+    
+}
+
+* {
+    
+    outline:none !IMPORTANT;
+
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px #fff !IMPORTANT;
+    -webkit-text-fill-color: #999 !IMPORTANT;
+    color: #999 !IMPORTANT;
+}
+
+.home .content__home {
+    
+    width: 100%;
+    height: 550px;
+    background-image: url(../images/background.jpeg);
+    background-size: cover;
+    padding-top: 30px;
+    
+}
+
+.home .home__nav, .signup .signup__nav, .signin .signin__nav, .dashboard .dashboard__nav, .articles .articles__nav, .add .add__nav, .pages .pages__nav, .article .article__nav, .page .page__nav, .articleedit .articleedit__nav, .pageedit .pageedit__nav, .articledelete .articledelete__nav, .pagedelete .pagedelete__nav, .addarticle .addarticle__nav, .addpage .addpage__nav {
+    
+    width: 100%;
+    text-align: right;
+    
+}
+
+.home .nav__li, .signup .nav__li, .signin .nav__li, .dashboard .nav__li, .articles .nav__li, .add .nav__li, .pages .nav__li, .article .nav__li, .page .nav__li, .pages .article__add, .articles .article__add, .add .article__add, .pages .article__add, .articleedit .nav__li, .pageedit .nav__li, .articledelete .nav__li, .pagedelete .nav__li, .addarticle .nav__li, .addpage .nav__li {
+    
+    display: inline;
+    margin-right: 30px;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: all 1s linear;
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    
+    
+}
+
+.home .nav__li:hover, .signup .nav__li:hover, .signin .nav__li:hover, .dashboard .nav__li:hover, .articles .nav__li:hover, .add .nav__li:hover, .pages .nav__li:hover, .article .nav__li:hover, .page .nav__li:hover, .articles .article__add:hover, .add .article__add:hover, .pages .article__add:hover, .articleedit .nav__li:hover, .pageedit .nav__li:hover, .articledelete .nav__li:hover, .pagedelete .nav__li:hover, .addarticle .nav__li:hover, .addpage .nav__li:hover {
+    
+    color: white;
+    cursor: pounter; 
+    background: #00d2d3;
+    padding: 10px 25px;
+    
+}
+
+.home .nav__link, .signup .nav__link, .signin .nav__link, .dashboard .nav__link, .articles .nav__link, .add .nav__link, .pages .nav__link, .article .nav__link, .page .nav__link, .articles .article__add, .add .article__add, .pages .article__add, .articleedit .nav__link, .pageedit .nav__link, .articledelete .nav__link, .pagedelete .nav__link, .addarticle .nav__link, .addpage .nav__link {
+    
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    
+}
+
+.home .nav__link___choosen, .signup .nav__link___choosen, .signin .nav__link___choosen, .dashboard .nav__link___choosen, .articles .nav__link___choosen, .add .nav__link___choosen, .pages .nav__link___choosen, .article .nav__link___choosen, .page .nav__link___choosen, .articles .article__add, .add .article__add, .pages .article__add, .articleedit .nav__link___choosen, .pageedit .nav__link___choosen, .articledelete .nav__link___choosen, .pagedelete .nav__link___choosen, .addarticle .nav__link___choosen, .addpage .nav__link___choosen {
+    
+    background: #00d2d3 !IMPORTANT;
+    color: white !IMPORTANT;
+    
+}
+
+.home .home__header {
+    
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    margin-top: 320px;
+    
+}
+
+.home .home__title {
+    
+    color: white;
+    font-size: 45px;
+    line-height: 30px;
+    margin-bottom: 50px;
+    font-weight: 100;
+    
+}
+
+.home .home__link {
+    
+    text-decoration: none;
+    
+}
+
+.home .home__button, .articleedit .form__submit, .pageedit .form__submit, .page .form__submit, .articledelete .form__submit, .pagedelete .form__submit, .addarticle .form__submit, .addpage .form__submit, .signup .form__submit, .signin .form__submit, .article .form__submit , .page .form__submit {
+    
+    background: #00d2d3;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 25px;
+    font-family: 'SF-UI-Display-Thin';
+    cursor: pointer;
+    transition: all 1s linear;
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    
+}
+
+.home .home__button:hover, .articleedit .form__submit:hover, .pageedit .form__submit:hover, .articledelete .form__submit:hover, .pagedelete .form__submit:hover, .addarticle .form__submit:hover, .addpage .form__submit:hover, .signup .form__submit:hover, .signin .form__submit:hover, .article .form__submit:hover, .page .form__submit:hover {
+    
+    cursor: pounter;
+    background: #3498db;
+    padding: 10px 25px;
+       
+}
+
+.home .content__header {
+    
+    padding: 30px 0 0;
+    text-align: center;
+    width: 100%;
+    height: 680px;
+    font-weight: 100;
+    
+}
+
+.home .content__header___title {
+    
+    color: black;
+    font-size: 45px;   
+    
+}
+
+.signup .nav__ul, .signin .nav__ul, .dashboard .nav__ul, .articles .nav__ul, .add .nav__ul, .pages .nav__ul, .article .nav__ul, .page .nav__ul, .articleedit .nav__ul, .pageedit .nav__ul, .articledelete .nav__ul, .pagedelete .nav__ul, .addarticle .nav__ul, .addpage .nav__ul {
+    
+    margin-right: 30px;
+    
+}
+
+.signup .nav__link___choosen, .signin .nav__link___choosen, .dashboard .nav__link___choosen, .articles .articles__link___choosen, .add.add__link___choosen, .pages .pages__link___choosen, .article .article__link___choosen, .page .article__link___choosen, .articleedit .articleedit__link___choosen, .pageedit .pageedit__link___choosen, .articledelete .articledelete__link___choosen, .pagedelete .pagedelete__link___choosen, .addarticle .addarticle__link___choosen, .addpage .addarticle__link___choosen {
+    
+    background: rgba(0,0,0,.8);
+    
+}
+
+
+.signup .content__signup, .signin .content__signin, .dashboard .content__dashboard, .articles .content__articles, .add .content__add, .pages .content__pages, .article .content__article, .page .content__page, .articleedit .content__articleedit, .pageedit .content__pageedit, .articledelete .content__articledelete, .pagedelete .content__pagedelete, .addarticle .content__addarticle, .addpage .content__addpage {
+    
+    padding: 20px 30px 20px 30px;
+    height: 100%;
+    width: 100%;
+    background: #f2f2f2;
+    
+}
+
+.signup .content__header, .signin .content__header, .dashboard .content__header, .articles .content__header, .add .content__header, .pages .content__header, .article .content__header, .page .content__header, .articleedit .content__header, .pageedit .content__header, .articledelete .content__header, .pagedelete .content__header, .addarticle .content__header, .addpage .content__header {
+    
+    padding: 30px 75px;
+    
+}
+
+.signup .form__label, .signin .form__label {
+    
+    font-size: 25px;
+    font-family: 'SF-UI-Display-Thin';
+    
+}
+
+.signup .form__input, .signin .form__input, .addarticle .form__input, .addpage .form__input {
+        
+    width: 200px;
+    height: 35px;
+    font-size: 25px;
+    font-family: 'SF-UI-Display-Thin';
+    border: 2px solid #bdc3c7;
+    padding: 3px 5px;
+    margin-bottom: 15px;
+    
+}
+
+.signup .error, .signin .error, .addarticle .error, .addpage .error {
+    
+    color: red;
+    font-family: 'SF-UI-Display-Thin';
+    font-size: 25px;
+    margin-bottom: 15px;
+    
+}
+
+.footer .footer__nav {
+    
+    width: 100%;
+    background: #f2f2f2;
+    padding: 30px 45px;
+    
+}
+
+.footer .nav__column, .articles .article__column, .add .article__column, .pages .article__column {
+    
+    display: inline-block;
+    margin-right: 100px;
+    vertical-align: top;
+    
+}
+
+.footer .nav__ul, .article .comment__metabar, .page .comment__metabar {
+    
+    list-style: none;
+    
+}
+
+.footer .nav__link {
+    
+    color: #111;
+    text-decoration: none;
+    padding: 10px 15px;
+    
+}
+
+.footer .nav__link:hover {
+    
+    background: white;
+    border-radius: 30px;
+    
+}
+
+.dashboard .content__header___title {
+    
+    margin-bottom: 40px;
+    
+}
+
+.dashboard .header__analytics {
+    
+    display: inline-block;
+    margin-right: 100px;
+    
+    
+}
+
+.articles .content__description, .add .content__description, .pages .content__description {
+    
+    font-weight: 300;
+    font-size: 30px;
+    background: #f5f5f5;
+    border-radius: 5px;
+    padding: 5px 20px;
+
+}
+
+.articles .articles__title, .add .articles__title, .pages .pages__title {
+    
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 300;
+    
+}
+
+.articles .content__article, .add .content__article, .pages .content__article {
+    
+    justify-content: left;
+    text-align: left;
+    width: 100%;
+    padding: 35px 0px 35px 30px;
+    
+}
+
+.articles .content__article:first-child, .add .content__article:first-child, .pages .content__article:first-child {
+    
+        
+    margin-top: 40px;
+        
+}
+
+.articles .content__article:nth-child(2n), .add .content__article:nth-child(2n), .pages .content__article:nth-child(2n) {
+    
+    background: rgba(238,238,238,.35);
+    
+}
+
+.articles .content__article:nth-child(2n+1), .add .content__article:nth-child(2n+1), .pages .content__article:nth-child(2n+1) {
+    
+    background: white;
+    
+}
+
+.articles .article__title, .add .article__title, .pages .article__title {
+    
+    font-weight: 600;
+    
+}
+
+.articles .article__text, .add .article__text, .pages .article__text {
+    
+    font-size: 21px;
+    line-height: 1.67;
+    color: #0a0c0a;
+    margin-right: 30px;
+    
+}
+
+.articles .article__link, .add .article__link, .pages .article__link {
+    
+    color: #0a0c0a;
+    text-decoration: none;
+    
+}
+
+.articles .content__metabar, .add .content__metabar, .pages .content__metabar, .article .content__metabar, .page .content__metabar, .articleedit .content__metabar, .pageedit .content__metabar, .addarticle .content__metabar, .addpage .content__metabar {
+    
+    width: 100%;
+    text-align: left;
+    padding: 20px 0px 20px 30px;
+    
+}
+
+.articles .article__column___right, .add .article__column___right, .pages .article__column___right {
+    
+    display: inline;
+    float: right;
+    
+    
+}
+
+.articles .metabar__list h3, .add .metabar__list h3, .pages .metabar__list h3, .article .metabar__list h3, .article .comment__metabar h3, .page .metabar__list h3, .page .comment__metabar h3, .articleedit .metabar__list h3, .pageedit .metabar__list h3, .page .metabar__list h3, .addarticle .metabar__list h3, .addpage .metabar__list h3 {
+    
+    display: inline;
+    
+}
+
+.articles .metabar__list li, .add .metabar__list li, .pages .metabar__list li, .article .metabar__list li, .article .comment__metabar li, .page .metabar__list li, .page .comment__metabar li, .articleedit .metabar__list li, .pageedit .metabar__list li, .addarticle .metabar__list li, .addpage .metabar__list li {
+    
+    list-style: none;
+    display: inline;
+    margin-right: 40px;
+    
+}
+
+.articles .author__image, .add .author__image, .pages .author__image, .article .author__image, .page .author__image, .articleedit .author__image, .pageedit .author__image, .addarticle .author__image, .addpage .author__image {
+    
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+}
+
+.articles .metabar__option, .articles .article__link, .add .metabar__option, .add .article__link, .pages .metabar__option, .pages .article__link, .article .metabar__option, .article .article__link, .page .metabar__option, .page .article__link, .articleedit .metabar__option, .pageedit .metabar__option, .addarticle .metabar__option, .addarticle .article__url___link, .addpage .metabar__option, .addpage .article__url___link {
+    
+    text-decoration: none !IMPORTANT;
+    padding: 10px 15px;
+    color: #0a0c0a;
+    border-radius: 30px;
+    
+}
+
+.articles .content__article:nth-child(2n) .metabar__option:hover, .articles .content__article:nth-child(2n) .article__link:hover, .add .content__article:nth-child(2n) .metabar__option:hover, .add .content__article:nth-child(2n) .article__link:hover, .pages .content__article:nth-child(2n) .metabar__option:hover, .pages .content__article:nth-child(2n) .article__link:hover, .article .comments .metabar__option:hover, .article .comments .article__link:hover, .page .comments .metabar__option:hover, .page .comments .article__link:hover, .articleedit .comments .article__link:hover, .pageedit .comments .article__link:hover, .addarticle .comments .article__link:hover, .addpage .comments .article__link:hover  {
+   
+    background: white;
+    
+}
+
+.articles .content__article:nth-child(2n+1) .metabar__option:hover, .articles .content__article:nth-child(2n+1) .article__link:hover, .add .content__article:nth-child(2n+1) .metabar__option:hover, .add .content__article:nth-child(2n+1) .article__link:hover, .pages .content__article:nth-child(2n+1) .metabar__option:hover, .pages .content__article:nth-child(2n+1) .article__link:hover, .article .metabar__option:hover, .article .article__link:hover, .page .metabar__option:hover, .page .article__link:hover, .articleedit .metabar__option:hover, .pageedit .metabar__option:hover, .articleedit .article__link:hover, .pageedit .article__link:hover, .addarticle .metabar__option:hover, .addarticle .article__link:hover, .addarticle .article__url___link, .addpage .metabar__option:hover, .addpage .article__link:hover, .addpage .article__url___link {
+    
+    background: rgba(238,238,238,.35);
+    
+}
+
+.article .header__article, .page .header__article, .articleedit .header__articleedit, .pageedit .header__articleedit, .addarticle .header__articleedit, .addpage .header__articleedit {
+    
+    background: white;
+    
+    
+}
+
+.article .content__metabar, .page .content__metabar, .articleedit .content__metabar, .pageedit .content__metabar, .addarticle .content__metabar, .addpage .content__metabar {
+    
+    margin-top: 40px;
+    padding: 0 !IMPORTANT;
+    
+}
+
+.article .article__text, .page .article__text, .articleedit .article__text, .pageedit .article__text, .addarticle .article__text, .addpage .article__text {
+    
+    text-indent: 20px;
+    margin-bottom: 27px;
+    
+}
+
+.article .comments, .page .comments {
+    
+   margin-top: 50px;
+    
+}
+
+.article .comment__container, .page .comment__container {
+    
+    padding: 30px 40px;
+    width: 650px;
+    border-radius: 4px; 
+    background: rgba(238,238,238,.35);
+    margin-bottom: 40px;
+    
+}
+
+.article .comment__content, .page .comment__content {
+    
+    margin-bottom: 40px;
+    
+}
+
+.article b, .page b {
+    
+    font-family: 'SF-UI-Display-Light' !IMPORTANT;
+    
+}
+
+.addarticle .article__url___link, .addpage .article__url___link {
+    
+    padding-left: 35px !IMPORTANT;
+    
+}
+
+.addarticle .article__url___link span:before, .addpage .article__url___link span:before {
+    
+    content: "/";
+    
+}
+
+.articleedit .bbcode {
+    
+    background: rgba(238,238,238,.35);
+    padding: 10px 25px;
+    border-radius: 30px;
+    margin: 0 10px 0 10px;
+    
+}
+
+.articleedit .header__article div, .pageedit .header__article div, .addarticle .header__article div, .addpage .header__article div {
+    
+    text-indent: 20px !IMPORTANT;
+    font-size: 21px !IMPORTANT;
+    line-height: 1.67 !IMPORTANT;
+    
+}
