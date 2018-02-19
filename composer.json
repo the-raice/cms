@@ -1,0 +1,12 @@
+{
+    "name": "the-raice/cms",
+    "description": "The Raice CMS",
+    "keywords": ["framework", "raice", "CMS", "PHP"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=7.0.0",
+        "the-raice/framework": "dev-master"
+    },
+    "minimum-stability": "stable"
+}
