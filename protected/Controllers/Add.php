@@ -142,7 +142,8 @@ class Add
                 
                     echo '/article/' . $url;
                     \Models\Article::insert("'', '$title', '$content', '$date', '$id', '$url'");
-                    \Models\Notifications::insert("'', 'создал статью', '$date', '$id'");
+                    \Models\Notifications::insert("'', 'создал статью', '/article/$url', '$date', '$id'");
+                    
                     return true;
                     
                 }
@@ -268,7 +269,7 @@ class Add
                     echo '/' . $url;
                     
                     \Models\Page::insert("'', '$title', '$content', '$date', '$id', '$url'");
-                    \Models\Notifications::insert("'', 'создал страницу', '$date', '$id'");
+                    \Models\Notifications::insert("'', 'создал страницу', '$url', '$date', '$id'");
                     
                     $content = str_replace( '$this->getName()', 'Page', str_replace( 'class Page', "class $class", file_get_contents('../protected/Controllers/Page.php') ) );
                     
@@ -296,3 +297,4 @@ class Add
     }
     
 }
+
