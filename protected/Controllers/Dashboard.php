@@ -9,6 +9,7 @@ class Dashboard
 {
     
     public static $user;
+    public static $notifications;
     
     public function index ()
     {
@@ -18,6 +19,7 @@ class Dashboard
        if ( !empty( $_SESSION['authorized'] ) ) {
            
            self::$user = \Models\User::getOneById( $_SESSION['authorized'] )[0];
+           self::$notifications = \Models\Notifications::getAll();
            
            parent::getView( $this->getName() );
            
