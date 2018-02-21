@@ -1,2 +1,2 @@
 # The Raice CMS
-Content Managment System
+Use php composer.phar require the-raice/cms:0.1.2 to install The Raice CMS
