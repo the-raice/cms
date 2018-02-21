@@ -262,6 +262,56 @@ input:-webkit-autofill {
     
 }
 
+.dashboard .content__article {
+    
+    background: rgba(238,238,238,.35);
+    padding: 10px 40px 10px 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    
+}
+
+.dashboard .article__column___top {
+ 
+    margin-bottom: 0px;
+    
+}
+
+.dashboard .article__column___right {
+    
+    display: inline;
+    
+}
+
+.dashboard .metabar__list li {
+    
+    margin: 0 !IMPORTANT;
+    
+}
+
+.dashboard .metabar__option___delete {
+    
+    margin-left: 85px;
+    float: right;
+    color: black !IMPORTANT;
+    
+}
+
+.dashboard .content__article a {
+    
+    font-family: 'SF-UI-Display-Light';
+    text-decoration: none;
+    color: #00d2d3;
+    
+}
+
+.dashboard .content__article .metabar__option___delete {
+    
+    color: black !IMPORTANT;
+    
+}
+
+
 .articles .content__description, .add .content__description, .pages .content__description {
     
     font-weight: 300;
@@ -352,7 +402,7 @@ input:-webkit-autofill {
     
 }
 
-.articles .metabar__list li, .add .metabar__list li, .pages .metabar__list li, .article .metabar__list li, .article .comment__metabar li, .page .metabar__list li, .page .comment__metabar li, .articleedit .metabar__list li, .pageedit .metabar__list li, .addarticle .metabar__list li, .addpage .metabar__list li {
+.articles .metabar__list li, .add .metabar__list li, .pages .metabar__list li, .article .metabar__list li, .article .comment__metabar li, .page .metabar__list li, .page .comment__metabar li, .articleedit .metabar__list li, .pageedit .metabar__list li, .addarticle .metabar__list li, .addpage .metabar__list li, .dashboard .metabar__list li {
     
     list-style: none;
     display: inline;
