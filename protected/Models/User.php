@@ -68,6 +68,10 @@ class User
                         session_start();
                         $_SESSION['authorized'] = $user[0][id];
                         
+                        $date = date("Y-m-d");
+                        
+                        \Models\Notifications::insert("'', 'зарегистрировался', '/user/$username', '$date', '$_SESSION[authorized]'");      
+                        
                         header("Location: /");
                     
                     }
@@ -130,9 +134,9 @@ class User
         
         session_start();
         
-        $user = self::getOneById( $_SESSION['authorized'] );
+        $user = self::getOneById( $_SESSION['authorized'] )[0];
         
-        if ( ( $author_id == $_SESSION['authorized'] ) || ( $user['role'] == 'editor' ) ) {
+        if ( ( $author_id == $_SESSION['authorized'] ) || ( $user['role'] == 'admin' ) ) {
          
             return true;
             
@@ -145,3 +149,4 @@ class User
     }
 
 }
+
