@@ -94,6 +94,7 @@ class Page
                 $id = $_SESSION['authorized'];
      
                 \Models\Page::update("title='" . $title . "',content='" . $content . "', date='" .$date . "'", $url, 'url');  
+                \Models\Notifications::insert("'', 'изменил страницу', '$url', '$date', '$id'");
                 
                 $location = '/' . $url;
                 echo $location;               
@@ -112,6 +113,8 @@ class Page
                     
                     \Models\Page::delete($url, 'url');
                     \Models\Comments::delete(self::$page['id'], 'page_id');
+                    \Models\Notifications::delete($url, 'action_url');
+                    
                     unlink( __FILE__ );
                     
                 } else {
