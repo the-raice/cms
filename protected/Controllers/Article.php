@@ -94,7 +94,7 @@ class Article
                 $id = $_SESSION['authorized'];
      
                 \Models\Article::update("title='" . $title . "',content='" . $content . "', date='" .$date . "'", $url, 'url');
-                \Models\Notifications::insert("'', 'изменил статью', 'self::$article[id]', '$date', '$id'");
+                \Models\Notifications::insert("'', 'изменил статью', '/article/$url', '$date', '$id'");
                 
                 $location = '/article/' . $url;
                 echo $location;               
@@ -113,7 +113,7 @@ class Article
                     
                     \Models\Article::delete($url, 'url');
                     \Models\Comments::delete(self::$article['id'], 'article_id');
-                    \Models\Notifications::insert("'', 'удалил статью', 'self::$article[id]', '$date', '$id'");                    
+                    \Models\Notifications::delete("/article/$url", 'action_url');    
                     
                 } else {
                     
@@ -149,4 +149,3 @@ class Article
     }
     
 }
-
