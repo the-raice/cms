@@ -137,6 +137,7 @@ class Page
                 $page_id = self::$page['id'];
                 
                 \Models\Comments::insert("'', '$page_id', '',  '$author_id', '$comment', '$date'");
+                \Models\Notifications::insert("'', 'добавил комментарий к странице', '/comment/$url', '$date', '$author_id'");
                 
                 echo true;
                 
