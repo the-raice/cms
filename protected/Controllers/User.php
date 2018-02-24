@@ -9,7 +9,9 @@ class User
 {
     
     
-    public $user;
+    public static $user;
+    public static $notifications;
+    public static $articles;
     
     public function __call ( $url, $arguments = false )
     {
@@ -18,7 +20,9 @@ class User
         
         $url = strtolower( $url);
 
-        $this->user = \Models\User::getOneByField( $url, 'username' )[0];
+        self::$user = \Models\User::getOneByField( $url, 'username' )[0];
+        self::$articles = \Models\Article::getOneByField( self::$user['id'], 'author_id' );
+        self::$notifications = \Models\Notifications::getOneByField( self::$user['id'], 'author_id' );
         
         parent::getView( $this->getName(), $this->user );
 
