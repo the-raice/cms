@@ -6,7 +6,7 @@
                     <a class="nav__link" href="/add"><li class="nav__li">Добавить</li></a>
                     <a class="nav__link" href="/pages"><li class="nav__li">Страницы</li></a>
                     <a class="nav__link" href="/articles"><li class="nav__li nav__link___choosen">Статьи</li></a>
-                    <a class="nav__link" href="/profile"><li class="nav__li nav__li___user"><?=\Controllers\Article::$user['username'] ?></li></a>
+                    <a class="nav__link" href="/user/<?=\Controllers\Article::$user['username'] ?>"><li class="nav__li nav__li___user"><?=\Controllers\Article::$user['username'] ?></li></a>
 <?php else: ?>
                     <a class="nav__link" href="/signin"><li class="nav__li">Войти</li></a>
                     <a class="nav__link" href="/signup"><li class="nav__li">Регистрация</li></a>
