@@ -5,7 +5,7 @@
                     <a class="nav__link" href="/add"><li class="nav__li">Добавить</li></a>
                     <a class="nav__link" href="/pages"><li class="nav__li">Страницы</li></a>
                     <a class="nav__link" href="/articles"><li class="nav__li nav__link___choosen">Статьи</li></a>
-                    <a class="nav__link" href="/profile"><li class="nav__li nav__li___user"><?=\Controllers\Articles::$user['username'] ?></li></a>
+                    <a class="nav__link" href="/user/<?=\Controllers\Articles::$user['username'] ?>"><li class="nav__li nav__li___user"><?=\Controllers\Articles::$user['username'] ?></li></a>
                 </ul>
             </nav>
         </div>
@@ -20,13 +20,6 @@
                 </div>
                 <div class="article__column article__column___right">
                     <ul class="metabar__list">
-                        <li>
-                           <h3><?=$article['date'] ?></h3>
-                        </li>
-                        <li>
-                            <img class="author__image" src="<?=Models\User::getOneById( $article['author_id'] )[0]['image'] ?>">
-                            <h3><a class="metabar__option" href="/user/<?=Models\User::getOneById( $article['author_id'] )[0]['username'] ?>"><?=Models\User::getOneById( $article['author_id'] )[0]['username'] ?></a></h3>
-                        </li>
 <?php if ( Models\User::isEditor( $_SESSION['authorized'], $article['author_id'] ) ): ?>
                         <li>
                             <h3><a class="metabar__option" href="/article/<?=$article['url'] ?>/edit">Редактировать</a></h3>
@@ -34,7 +27,14 @@
                         <li>
                             <h3><a class="metabar__option" href="/article/<?=$article['url'] ?>/delete">Удалить</a></h3>
                         </li>
-<?php endif; ?>                   
+<?php endif; ?> 
+                        <li>
+                           <h3><?=$article['date'] ?></h3>
+                        </li>
+                        <li>
+                            <img class="author__image" src="<?=Models\User::getOneById( $article['author_id'] )[0]['image'] ?>">
+                            <h3><a class="metabar__option" href="/user/<?=Models\User::getOneById( $article['author_id'] )[0]['username'] ?>"><?=Models\User::getOneById( $article['author_id'] )[0]['username'] ?></a></h3>
+                        </li>                  
                     </ul>
                 </div>
             </article>
