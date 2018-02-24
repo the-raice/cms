@@ -135,6 +135,7 @@ class Article
                 $article_id = self::$article['id'];
                 
                 \Models\Comments::insert("'', '', '$article_id', '$author_id', '$comment', '$date'");
+                \Models\Notifications::insert("'', 'добавил комментарий к статье', '/comment/article/$url', '$date', '$author_id'");
                 
                 echo true;
                 
