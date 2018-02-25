@@ -21,7 +21,7 @@ class Dashboard
            self::$user = \Models\User::getOneById( $_SESSION['authorized'] )[0];
            self::$notifications = \Models\Notifications::getAll();
            
-           parent::getView( $this->getName() );
+           parent::getView( $this->getName(), 'Панель управления' );
            
        } else {
            
