@@ -23,7 +23,7 @@ class Signin
            
        }
        
-       parent::getView( $this->getName() );
+       parent::getView( $this->getName(), 'Войти' );
        
         
     }
