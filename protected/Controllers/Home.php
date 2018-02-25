@@ -19,7 +19,7 @@ class Home
            
        } else {
         
-           parent::getView( $this->getName() );
+           parent::getView( $this->getName(), 'The Raice CMS' );
            
        }
         
