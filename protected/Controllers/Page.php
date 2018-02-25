@@ -101,7 +101,7 @@ class Page
                 
             } else {
                 
-                parent::getView( 'PageEdit' );
+                parent::getView( 'PageEdit', 'Редактирование страницы' );
                 
             }
             
@@ -119,7 +119,7 @@ class Page
                     
                 } else {
                     
-                    parent::getView('PageDelete');
+                    parent::getView('PageDelete', 'Удаление страницы');
                     
                 }
             
@@ -145,7 +145,7 @@ class Page
             
             self::$comments = \Models\Comments::getAll();
             
-            parent::getView( $this->getName() );
+            parent::getView( $this->getName(), self::$page['title'] );
             
         
         }
@@ -153,3 +153,4 @@ class Page
     }
     
 }
+
