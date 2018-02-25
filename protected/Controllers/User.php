@@ -24,7 +24,7 @@ class User
         self::$articles = \Models\Article::getOneByField( self::$user['id'], 'author_id' );
         self::$notifications = \Models\Notifications::getOneByField( self::$user['id'], 'author_id' );
         
-        parent::getView( $this->getName(), $this->user );
+        parent::getView( $this->getName(), self::$user['username'] );
 
     }
     
