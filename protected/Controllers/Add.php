@@ -29,9 +29,7 @@ class Add
                 
             } else {
                 
-                
-                
-                parent::getView( $this->getName() );
+                parent::getView( $this->getName(), 'Добавить' );
                 
             }
             
@@ -151,7 +149,7 @@ class Add
                 
             } else {
             
-                parent::getView( 'AddArticle' );
+                parent::getView( 'AddArticle', 'Добавить статью' );
             
             }
         
@@ -284,7 +282,7 @@ class Add
                 
             } else {
             
-                parent::getView( 'AddPage' );
+                parent::getView( 'AddPage', 'Добавить страницу' );
             
             }
             
@@ -297,3 +295,4 @@ class Add
     }
     
 }
+
