@@ -25,7 +25,7 @@ class Articles
                
             self::$user = \Models\User::getOneById( $_SESSION['authorized'] )[0];
                
-            parent::getView( $this->getName() );
+            parent::getView( $this->getName(), 'Статьи' );
                
         } else {
                
