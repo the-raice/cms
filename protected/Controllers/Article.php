@@ -101,7 +101,7 @@ class Article
                 
             } else {
                 
-                parent::getView( 'articleEdit' );
+                parent::getView( 'articleEdit', 'Редактирование статьи' );
                 
             }
             
@@ -117,7 +117,7 @@ class Article
                     
                 } else {
                     
-                    parent::getView('articleDelete');
+                    parent::getView('articleDelete', 'Удаление статьи');
                     
                 }
             
@@ -143,7 +143,7 @@ class Article
             
             self::$comments = \Models\Comments::getAll();
             
-            parent::getView( 'article' );
+            parent::getView( 'article', self::$article['title'] );
         
         }
         
