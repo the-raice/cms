@@ -22,7 +22,7 @@ class Signup
            
        }
        
-       parent::getView( $this->getName() );
+       parent::getView( $this->getName(), 'Регистрация' );
        
         
     }
