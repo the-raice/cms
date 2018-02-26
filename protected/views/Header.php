@@ -19,3 +19,23 @@
                     </div>
                 </header>
         <div class="<?=$class?>">
+            <?php if ( $class != 'home' && $class != 'signin' && $class != 'signup' ): ?>
+                <div class="content__<?=$class?>">
+                    <nav class="<?=$class?>__nav">
+                        <ul class="nav__ul">
+                        <?php
+                        
+                        $menu = [
+                                    '/dashboard' => 'Панель управления',
+                                    '/pages' => 'Страницы',
+                                    '/articles' => 'Статьи'
+                                ];
+                                
+                        $i = 1;
+                        
+                        ?>
+                        <?php foreach ( $menu as $k => $v ): ?>
+                            <a class="nav__link" href="<?=$k ?>"><li class="nav__li it<?=$i ?>"><?=$v ?></li></a>
+                            <?php $i++; ?>
+                        <?php endforeach; ?>
+            <?php endif; ?>
