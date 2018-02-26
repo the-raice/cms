@@ -1,10 +1,3 @@
-        <div class="content__dashboard">
-            <nav class="dashboard__nav">
-                <ul class="nav__ul">
-                    <a class="nav__link" href="/dashboard"><li class="nav__li nav__link___choosen">Панель управления</li></a>
-                    <a class="nav__link" href="/add"><li class="nav__li">Добавить</li></a>
-                    <a class="nav__link" href="/pages"><li class="nav__li">Страницы</li></a>
-                    <a class="nav__link" href="/articles"><li class="nav__li">Статьи</li></a>
                     <a class="nav__link" href="/user/<?=\Controllers\Dashboard::$user['username'] ?>"><li class="nav__li nav__li___user"><?=\Controllers\Dashboard::$user['username'] ?></li></a>
                 </ul>
             </nav>
