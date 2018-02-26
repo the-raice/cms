@@ -1,5 +1,11 @@
+        <div class="content__page">
+            <nav class="page__nav">
+                <ul class="nav__ul">
 <?php $class = '\Controllers\\' . explode('/', str_replace( '-', '', $_SERVER['REQUEST_URI']) )[1]; ?>
 <?php if ( !empty( $class::$user ) ): ?>
+                    <a class="nav__link" href="/dashboard"><li class="nav__li it1">Панель управления</li></a>
+                    <a class="nav__link" href="/pages"><li class="nav__li nav__link___choosen it2">Страницы</li></a>
+                    <a class="nav__link" href="/articles"><li class="nav__li it3">Статьи</li></a>
                     <a class="nav__link" href="/user/<?=$class::$user['username'] ?>"><li class="nav__li nav__li___user"><?=$class::$user['username'] ?></li></a>
 <?php else: ?>
                     <a class="nav__link" href="/signin"><li class="nav__li">Войти</li></a>
