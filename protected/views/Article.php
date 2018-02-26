@@ -1,11 +1,4 @@
-        <div class="content__article">
-            <nav class="article__nav">
-                <ul class="nav__ul">
 <?php if ( !empty( \Controllers\Article::$user ) ): ?>
-                    <a class="nav__link" href="/dashboard"><li class="nav__li">Панель управления</li></a>
-                    <a class="nav__link" href="/add"><li class="nav__li">Добавить</li></a>
-                    <a class="nav__link" href="/pages"><li class="nav__li">Страницы</li></a>
-                    <a class="nav__link" href="/articles"><li class="nav__li nav__link___choosen">Статьи</li></a>
                     <a class="nav__link" href="/user/<?=\Controllers\Article::$user['username'] ?>"><li class="nav__li nav__li___user"><?=\Controllers\Article::$user['username'] ?></li></a>
 <?php else: ?>
                     <a class="nav__link" href="/signin"><li class="nav__li">Войти</li></a>
