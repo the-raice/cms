@@ -1,11 +1,15 @@
         <div class="content__user">
             <nav class="user__nav">
                 <ul class="nav__ul">
-                    <a class="nav__link" href="/dashboard"><li class="nav__li">Панель управления</li></a>
-                    <a class="nav__link" href="/add"><li class="nav__li">Добавить</li></a>
-                    <a class="nav__link" href="/pages"><li class="nav__li">Страницы</li></a>
-                    <a class="nav__link" href="/articles"><li class="nav__li">Статьи</li></a>
+<?php if ( !empty( $_SESSION['authorized'] ) ): ?>
+                    <a class="nav__link" href="/dashboard"><li class="nav__li it1">Панель управления</li></a>
+                    <a class="nav__link" href="/pages"><li class="nav__li it2">Страницы</li></a>
+                    <a class="nav__link" href="/articles"><li class="nav__li nav__link___choosen it3">Статьи</li></a>
                     <a class="nav__link" href="/user/<?=\Models\User::getOneByField( $_SESSION['authorized'], 'id' )[0]['username'] ?>"><li class="nav__li nav__li___user nav__link___choosen"><?=\Models\User::getOneByField( $_SESSION['authorized'], 'id' )[0]['username'] ?></li></a>
+<?php else: ?>
+                    <a class="nav__link" href="/signin"><li class="nav__li">Войти</li></a>
+                    <a class="nav__link" href="/signup"><li class="nav__li">Регистрация</li></a>
+<?php endif; ?>
                 </ul>
             </nav>
         </div>
