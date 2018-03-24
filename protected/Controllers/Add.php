@@ -29,13 +29,13 @@ class Add
                 
             } else {
                 
-                parent::getView( $this->getName(), 'Добавить' );
+                header("Location: /");
                 
             }
             
         } else {
            
-           header('Location: /');
+           header("Location: /");
            
         }
         
@@ -295,4 +295,3 @@ class Add
     }
     
 }
-
