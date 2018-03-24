@@ -1,12 +1,3 @@
-        <div class="content__signin">
-            <nav class="signin__nav">
-                <ul class="nav__ul">
-                    <a class="nav__link" href="/"><li class="nav__li">Главная</li></a>
-                    <a class="nav__link" href="/signup"><li class="nav__li">Регистрация</li></a>
-                    <a class="nav__link" href="/signin"><li class="nav__li nav__link___choosen">Войти</li></a>
-                </ul>
-            </nav>
-        </div>
         <header class="content__header">
             <h1 class="content__header___title">Войти</h1>
             <br>
