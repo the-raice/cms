@@ -19,7 +19,12 @@
                     </div>
                 </header>
         <div class="<?=$class?>">
-            <?php if ( $class != 'home' && $class != 'signin' && $class != 'signup' && $class != 'article' && $class != 'page' ): ?>
+            <?php
+            
+            $pages = \Models\Page::getAll();
+            
+            ?>
+            <?php if ( $class != 'home' && $class != 'signin' && $class != 'signup' && $class != 'article' && $class != 'page' && $class != 'user' ): ?>
                 <div class="content__<?=$class?>">
                     <nav class="<?=$class?>__nav">
                         <ul class="nav__ul">
@@ -38,23 +43,26 @@
                             <a class="nav__link" href="<?=$k ?>"><li class="nav__li it<?=$i ?>"><?=$v ?></li></a>
                             <?php $i++; ?>
                         <?php endforeach; ?>
-            <?php elseif ( $class == 'home' && $class == 'signin' && $class == 'signup' ): ?>
+            <?php elseif ( $class == 'signin' || $class == 'signup' ): ?>
             <div class="content__<?=$class?>">
-                    <nav class="<?=$class?>__nav">
-                        <ul class="nav__ul">
-                        <?php
-                        
-                        $menu = [
-                                    '/' => 'Главная',
-                                    '/signup' => 'Регистрация',
-                                    '/signin' => 'Войти'
-                                ];
+                <nav class="<?=$class?>__nav">
+                    <ul class="nav__ul">
+                    <?php
+                    
+                    $menu = [
+                                '/' => 'Главная',
+                                '/signup' => 'Регистрация',
+                                '/signin' => 'Войти'
+                        ];
                                 
-                        $i = 1;
+                    $i = 1;
                         
-                        ?>
-                        <?php foreach ( $menu as $k => $v ): ?>
-                            <a class="nav__link" href="<?=$k ?>"><li class="nav__li it<?=$i ?>"><?=$v ?></li></a>
-                            <?php $i++; ?>
-                        <?php endforeach; ?>
+                    ?>
+                    <?php foreach ( $menu as $k => $v ): ?>
+                        <a class="nav__link" href="<?=$k ?>"><li class="nav__li it<?=$i ?>"><?=$v ?></li></a>
+                        <?php $i++; ?>
+                    <?php endforeach; ?>
+                    </ul>
+                </nav>
+            </div>
             <?php endif; ?>
