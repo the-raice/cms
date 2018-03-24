@@ -22,29 +22,15 @@
             <h1 class="content__header___title">Последние статьи</h1>
             <br>
             <?php foreach ( \Controllers\Home::$articles as $article ): ?>
+            <?php
+            
+            $article['content'] = mb_strimwidth( str_replace( "\n", '', str_replace( '  ', '', $article['content']) ), 0, 350) . '...';
+            
+            ?>
             <article class="content__article">
-                <div class="article__column">
-                    <h3 class="article__title"><a class="article__link" href="/article/<?=$article['url'] ?>"><?=$article['title'] ?></a></h3>
-                </div>
-                <div class="article__column article__column___right">
-                    <ul class="metabar__list">
-<?php if ( Models\User::isEditor( $_SESSION['authorized'], $article['author_id'] ) ): ?>
-                        <li>
-                            <h3><a class="metabar__option" href="/article/<?=$article['url'] ?>/edit">Редактировать</a></h3>
-                        </li>
-                        <li>
-                            <h3><a class="metabar__option" href="/article/<?=$article['url'] ?>/delete">Удалить</a></h3>
-                        </li>
-<?php endif; ?> 
-                        <li>
-                           <h3><?=$article['date'] ?></h3>
-                        </li>
-                        <li>
-                            <img class="author__image" src="<?=Models\User::getOneById( $article['author_id'] )[0]['image'] ?>">
-                            <h3><a class="metabar__option" href="/user/<?=Models\User::getOneById( $article['author_id'] )[0]['username'] ?>"><?=Models\User::getOneById( $article['author_id'] )[0]['username'] ?></a></h3>
-                        </li>                  
-                    </ul>
-                </div>
+                <h3 class="article__title"><a class="article__link" href="/article/<?=$article['url'] ?>"><?=$article['title'] ?></a></h3>
+                <p><?=$article['content'] ?></p>
+                <h3 class="article__date"><?=$article['date'] ?></h3>
             </article>
 <?php endforeach; ?>
         </header>
