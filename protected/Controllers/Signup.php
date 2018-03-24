@@ -15,14 +15,24 @@ class Signup
     
     public function index ()
     {
+              
+       session_start();
        
-       if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
+       if ( empty( $_SESSION ) ) {
            
-           \Models\User::validateSignup( $_POST );
+           if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
+               
+               \Models\User::validateSignup( $_POST );
+               
+           }
+           
+           parent::getView( $this->getName(), 'Регистрация' );
+                   
+       } else {
+           
+           header("Location: /dashboard");
            
        }
-       
-       parent::getView( $this->getName(), 'Регистрация' );
        
         
     }
