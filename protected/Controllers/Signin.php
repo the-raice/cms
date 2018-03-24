@@ -17,13 +17,23 @@ class Signin
     public function index ()
     {
        
-       if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
+       session_start();
+       
+       if ( empty( $_SESSION ) ) {
+       
+           if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
+               
+               \Models\User::validateSignin( $_POST );
+               
+           }
            
-           \Models\User::validateSignin( $_POST );
+           parent::getView( $this->getName(), 'Войти' );
+           
+       } else {
+           
+           header("Location: /dashboard");
            
        }
-       
-       parent::getView( $this->getName(), 'Войти' );
        
         
     }
