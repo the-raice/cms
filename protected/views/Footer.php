@@ -14,23 +14,34 @@
 <?php endif; ?>
                 </ul>
             </div>
+            <?php
+            
+            $c = count($pages);
+            
+            ?>
+            <?php for( $i = 1 ; $i < $c; ): ?>
             <div class="nav__column">
                 <ul class="nav__ul">
-                    <li class="nav__li nav__link___choosen"><h4><a class="nav__link" href="/news">Официальный блог</a></h4></li>
-                    <li class="nav__li"><h4><a class="nav__link" href="/about">О нас</a></h4></li>
-                    <li class="nav__li"><h4><a class="nav__link" href="/history">История</a></h4></li>
+                <?php foreach ( $pages as $page ): ?>
+                    <?php if ( ($i % 6) != 0 ): ?>
+                    <li class="nav__li nav__link___choosen"><h4><a class="nav__link" href="/<?=$page['url'] ?>"><?=$page['title'] ?></a></h4></li>
+                    <?php $i++; ?>
+                    <?php else: ?>
                 </ul>
             </div>
             <div class="nav__column">
                 <ul class="nav__ul">
-                    <li class="nav__li nav__link___choosen"><h4><a class="nav__link" href="/privacy">Политика конфиденциальности</a></h4></li>
-                    <li class="nav__li"><h4><a class="nav__link" href="/conditions">Условия пользования</a></h4></li>
+                    <li class="nav__li nav__link___choosen"><h4><a class="nav__link" href="/<?=$page['url'] ?>"><?=$page['title'] ?></a></h4></li> 
+                    <?php $i++; ?>                    
+                    <?php endif; ?>
+                <?php endforeach; ?>
                 </ul>
             </div>
+            <?php endfor; ?>
         </nav>
     </footer>
     <script src="/assets/js/pagePreloadEffectClassie.js"></script>
-	<script src="/assets/js/pagePreloadEffectPathLoader.js"></script>
-	<script src="/assets/js/pagePreloadEffectMain.js"></script>
+    <script src="/assets/js/pagePreloadEffectPathLoader.js"></script>
+    <script src="/assets/js/pagePreloadEffectMain.js"></script>
 </body>
 </html>
