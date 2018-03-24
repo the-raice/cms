@@ -52,7 +52,7 @@ class Comment
                 
         } else {
             
-            parent::getView('CommentDelete');
+            parent::getView('CommentDelete', 'Удаление комментария');
             
         }
         
@@ -70,7 +70,7 @@ class Comment
                 
         } else {
             
-            parent::getView('CommentEdit');
+            parent::getView('CommentEdit', 'Редактирование комментария');
             
         }
         
