@@ -72,7 +72,7 @@ class User
                         
                         \Models\Notifications::insert("'', 'зарегистрировался', '/user/$username', '$date', '$_SESSION[authorized]'");      
                         
-                        header("Location: /");
+                        header("Location: /dashboard");
                     
                     }
                     
@@ -123,7 +123,7 @@ class User
             session_start();
             $_SESSION['authorized'] = $user[0][id];
             
-            header("Location: /");   
+            header("Location: /dashboard");   
             
         }
         
