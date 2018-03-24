@@ -13,13 +13,13 @@
         <?php $username = \Models\User::getOneById( $notification['author_id'] )[0]['username']; ?>
                         <h3 class="article__title"><a href="/user/<?=$username ?>">@<?=$username ?></a> <?=$notification['content'] ?> <a class="article__link" href="<?=$notification['action_url'] ?>"><?=$title ?></a>
     <?php if ( Models\User::isEditor( $_SESSION['authorized'], $notification['author_id'] ) ): ?>
-                        <a class="metabar__option___delete" href="#">x</a></h3>
+                        <a class="metabar__option___delete" href="/notification/delete/<?=$notification['id']?>">x</a></h3>
     <?php endif; ?>  
     <?php elseif ( !empty( strpos ( $notification['action_url'], 'user') ) ): ?>
         <?php $username = \Models\User::getOneById( $notification['author_id'] )[0]['username']; ?>
                         <h3 class="article__title"><a href="/user/<?=$username ?>">@<?=$username ?></a> <?=$notification['content'] ?></a>
         <?php if ( Models\User::isEditor( $_SESSION['authorized'], $notification['author_id'] ) ): ?>
-                        <a class="metabar__option___delete" href="#">x</a></h3>
+                        <a class="metabar__option___delete" href="/notification/delete/<?=$notification['id']?>">x</a></h3>
         <?php endif; ?>
     <?php elseif ( !empty( strpos( $notification['action_url'], 'comment') ) ): ?>
         <?php if ( !empty( strpos( $notification['action_url'], 'article') ) ): ?>
@@ -28,7 +28,7 @@
             <?php $username = \Models\User::getOneById( $notification['author_id'] )[0]['username']; ?>
                         <h3 class="article__title"><a href="/user/<?=$username ?>">@<?=$username ?></a> <?=$notification['content'] ?> <a class="article__link" href="<?=$url ?>"><?=$title ?></a>
             <?php if ( Models\User::isEditor( $_SESSION['authorized'], $notification['author_id'] ) ): ?>
-                        <a class="metabar__option___delete" href="#">x</a></h3>
+                        <a class="metabar__option___delete" href="/notification/delete/<?=$notification['id']?>">x</a></h3>
             <?php endif; ?>
         <?php else: ?>
             <?php $title = mb_strtolower( \Models\Page::getOneByField( str_replace( '/comment/', '', $notification['action_url']), 'url' )[0]['title'] ); ?>
@@ -36,7 +36,7 @@
             <?php $username = \Models\User::getOneById( $notification['author_id'] )[0]['username']; ?>
                         <h3 class="article__title"><a href="/user/<?=$username ?>">@<?=$username ?></a> <?=$notification['content'] ?> <a class="article__link" href="<?=$url ?>"><?=$title ?></a>
             <?php if ( Models\User::isEditor( $_SESSION['authorized'], $notification['author_id'] ) ): ?>
-                        <a class="metabar__option___delete" href="#">x</a></h3>
+                        <a class="metabar__option___delete" href="/notification/delete/<?=$notification['id']?>">x</a></h3>
             <?php endif; ?>
         <?php endif; ?>
     <?php else: ?>
@@ -44,7 +44,7 @@
         <?php $username = \Models\User::getOneById( $notification['author_id'] )[0]['username']; ?>
                         <h3 class="article__title"><a href="/user/<?=$username ?>">@<?=$username ?></a> <?=$notification['content'] ?> <a class="article__link" href="/<?=$notification['action_url'] ?>"><?=$title ?></a>
         <?php if ( Models\User::isEditor( $_SESSION['authorized'], $notification['author_id'] ) ): ?>
-                        <a class="metabar__option___delete" href="#">x</a></h3>
+                        <a class="metabar__option___delete" href="/notification/delete/<?=$notification['id']?>">x</a></h3>
         <?php endif; ?>
     <?php endif;?>
 
