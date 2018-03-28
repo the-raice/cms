@@ -129,6 +129,7 @@ if ( $step == 4 ) {
         
         require 'views/header.php';
         require 'views/step-' . $step . '.php';
+        require 'views/footer.php';
         
     } else {
         
