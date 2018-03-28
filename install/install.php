@@ -8,12 +8,12 @@ if ( $step == 1 && !empty( $_POST ) ) {
     
     try {
         
-		$dbh = new \PDO('mysql:host=' . $data['host'] . ';dbname=' . $data['name'], $data['user'], $data['password']);
-			
-	} catch ( \PDOException $e ) {
-			
-		$error = 'Ошибка соединения с базой данных!';
-			
+        $dbh = new \PDO('mysql:host=' . $data['host'] . ';dbname=' . $data['name'], $data['user'], $data['password']);
+            
+    } catch ( \PDOException $e ) {
+            
+        $error = 'Ошибка соединения с базой данных!';
+            
     }
     
     if ( empty( $error ) ) {
@@ -33,9 +33,9 @@ if ( $step == 1 && !empty( $_POST ) ) {
         
         $sql = file_get_contents('table.sql');
 
-		$sth = $dbh->prepare($sql);
-		
-		$sth->execute();
+        $sth = $dbh->prepare($sql);
+        
+        $sth->execute();
         
         header("Location: /install/install?step=2");
         
@@ -106,10 +106,10 @@ if ( $step == 2 && !empty( $_POST ) ) {
     if ( empty( $error ) ) {
         
         $sql = file_get_contents('table.sql');
-	
-		$sth = $dbh->prepare($sql);
-		
-		$sth->execute();
+    
+        $sth = $dbh->prepare($sql);
+        
+        $sth->execute();
         
         header("Location: /install/install?step=3");
         
