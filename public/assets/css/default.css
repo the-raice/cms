@@ -1,7 +1,5 @@
-@import url(../fonts/BloggerSans.css);
 @import url(../fonts/SF-UI-Display-Thin.css);
 @import url(../fonts/SF-UI-Display-Light.css);
-@import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
 * {
     
@@ -42,14 +40,14 @@ input:-webkit-autofill {
     
 }
 
-.home .home__nav, .signup .signup__nav, .signin .signin__nav, .dashboard .dashboard__nav, .user .user__nav, .articles .articles__nav, .add .add__nav, .pages .pages__nav, .article .article__nav, .page .page__nav, .articleedit .articleedit__nav, .pageedit .pageedit__nav, .articledelete .articledelete__nav, .pagedelete .pagedelete__nav, .commentdelete .commentdelete__nav, .commentedit .commentedit__nav, .addarticle .addarticle__nav, .addpage .addpage__nav {
+.home .home__nav, .signup .signup__nav, .signin .signin__nav, .dashboard .dashboard__nav, .install .install__nav, .user .user__nav, .articles .articles__nav, .add .add__nav, .pages .pages__nav, .article .article__nav, .page .page__nav, .articleedit .articleedit__nav, .pageedit .pageedit__nav, .articledelete .articledelete__nav, .pagedelete .pagedelete__nav, .commentdelete .commentdelete__nav, .commentedit .commentedit__nav, .addarticle .addarticle__nav, .addpage .addpage__nav {
     
     width: 100%;
     text-align: right;
     
 }
 
-.home .nav__li, .signup .nav__li, .signin .nav__li, .dashboard .nav__li, .user .nav__li, .articles .nav__li, .add .nav__li, .pages .nav__li, .article .nav__li, .page .nav__li, .pages .article__add, .articles .article__add, .add .article__add, .pages .article__add, .articleedit .nav__li, .pageedit .nav__li, .articledelete .nav__li, .pagedelete .nav__li, .commentdelete .nav__li, .commentedit .nav__li, .addarticle .nav__li, .addpage .nav__li {
+.home .nav__li, .signup .nav__li, .signin .nav__li, .dashboard .nav__li, .install .nav__li, .user .nav__li, .articles .nav__li, .add .nav__li, .pages .nav__li, .article .nav__li, .page .nav__li, .pages .article__add, .articles .article__add, .add .article__add, .pages .article__add, .articleedit .nav__li, .pageedit .nav__li, .articledelete .nav__li, .pagedelete .nav__li, .commentdelete .nav__li, .commentedit .nav__li, .addarticle .nav__li, .addpage .nav__li {
     
     display: inline;
     margin-right: 30px;
@@ -64,7 +62,7 @@ input:-webkit-autofill {
     
 }
 
-.home .nav__li:hover, .signup .nav__li:hover, .signin .nav__li:hover, .dashboard .nav__li:hover, .user .nav__li:hover, .articles .nav__li:hover, .add .nav__li:hover, .pages .nav__li:hover, .article .nav__li:hover, .page .nav__li:hover, .articles .article__add:hover, .add .article__add:hover, .pages .article__add:hover, .articleedit .nav__li:hover, .pageedit .nav__li:hover, .articledelete .nav__li:hover, .pagedelete .nav__li:hover, .commentdelete .nav__li:hover, .commentedit .nav__li:hover, .addarticle .nav__li:hover, .addpage .nav__li:hover {
+.home .nav__li:hover, .signup .nav__li:hover, .signin .nav__li:hover, .dashboard .nav__li:hover, .install .nav__li:hover, .user .nav__li:hover, .articles .nav__li:hover, .add .nav__li:hover, .pages .nav__li:hover, .article .nav__li:hover, .page .nav__li:hover, .articles .article__add:hover, .add .article__add:hover, .pages .article__add:hover, .articleedit .nav__li:hover, .pageedit .nav__li:hover, .articledelete .nav__li:hover, .pagedelete .nav__li:hover, .commentdelete .nav__li:hover, .commentedit .nav__li:hover, .addarticle .nav__li:hover, .addpage .nav__li:hover {
     
     color: white;
     cursor: pounter; 
@@ -73,7 +71,7 @@ input:-webkit-autofill {
     
 }
 
-.home .nav__link, .signup .nav__link, .signin .nav__link, .dashboard .nav__link, .user .nav__link, .articles .nav__link, .add .nav__link, .pages .nav__link, .article .nav__link, .page .nav__link, .articles .article__add, .add .article__add, .pages .article__add, .articleedit .nav__link, .pageedit .nav__link, .articledelete .nav__link, .pagedelete .nav__link, .commentdelete .nav__link, .commentedit .nav__link, .addarticle .nav__link, .addpage .nav__link {
+.home .nav__link, .signup .nav__link, .signin .nav__link, .dashboard .nav__link, .install .nav__link, .user .nav__link, .articles .nav__link, .add .nav__link, .pages .nav__link, .article .nav__link, .page .nav__link, .articles .article__add, .add .article__add, .pages .article__add, .articleedit .nav__link, .pageedit .nav__link, .articledelete .nav__link, .pagedelete .nav__link, .commentdelete .nav__link, .commentedit .nav__link, .addarticle .nav__link, .addpage .nav__link {
     
     color: black;
     text-decoration: none;
@@ -81,7 +79,7 @@ input:-webkit-autofill {
     
 }
 
-.home .nav__link___choosen, .signup .nav__link___choosen, .signin .nav__link___choosen, .dashboard .nav__link___choosen, .user .nav__link___choosen, .articles .nav__link___choosen, .add .nav__link___choosen, .pages .nav__link___choosen, .article .nav__link___choosen, .page .nav__link___choosen, .articles .article__add, .add .article__add, .pages .article__add, .articleedit .nav__link___choosen, .pageedit .nav__link___choosen, .articledelete .nav__link___choosen, .pagedelete .nav__link___choosen, .commentdelete .nav__link___choosen, .commentedit .nav__link___choosen, .addarticle .nav__link___choosen, .addpage .nav__link___choosen, .dashboard nav .it1, .pages nav .it2, .articles nav .it3, .addarticle nav .it3, .addpage nav .it2, .article nav .it3, .articledelete nav .it3, .articleedit nav .it3, .commentdelete nav .it1, .commentedit nav .it1, .pagedelete nav .it2, .pageedit nav .it2, .signin nav .it3, .signup nav .it2 {
+.home .nav__link___choosen, .signup .nav__link___choosen, .signin .nav__link___choosen, .dashboard .nav__link___choosen, .install .nav__link___choosen, .user .nav__link___choosen, .articles .nav__link___choosen, .add .nav__link___choosen, .pages .nav__link___choosen, .article .nav__link___choosen, .page .nav__link___choosen, .articles .article__add, .add .article__add, .pages .article__add, .articleedit .nav__link___choosen, .pageedit .nav__link___choosen, .articledelete .nav__link___choosen, .pagedelete .nav__link___choosen, .commentdelete .nav__link___choosen, .commentedit .nav__link___choosen, .addarticle .nav__link___choosen, .addpage .nav__link___choosen, .dashboard nav .it1, .pages nav .it2, .articles nav .it3, .addarticle nav .it3, .addpage nav .it2, .article nav .it3, .articledelete nav .it3, .articleedit nav .it3, .commentdelete nav .it1, .commentedit nav .it1, .pagedelete nav .it2, .pageedit nav .it2, .signin nav .it3, .signup nav .it2, .step0 nav .it1, .step1 nav .it2, .step2 nav .it3, .step3 nav .it4 {
     
     background: #00d2d3 !IMPORTANT;
     color: white !IMPORTANT;
@@ -113,7 +111,7 @@ input:-webkit-autofill {
     
 }
 
-.home .home__button, .articleedit .form__submit, .pageedit .form__submit, .page .form__submit, .articledelete .form__submit, .pagedelete .form__submit, .commentdelete .form__submit, .commentedit .form__submit, .addarticle .form__submit, .addpage .form__submit, .signup .form__submit, .signin .form__submit, .article .form__submit , .page .form__submit {
+.home .home__button, .install .form__submit, .articleedit .form__submit, .pageedit .form__submit, .page .form__submit, .articledelete .form__submit, .pagedelete .form__submit, .commentdelete .form__submit, .commentedit .form__submit, .addarticle .form__submit, .addpage .form__submit, .signup .form__submit, .signin .form__submit, .article .form__submit , .page .form__submit {
     
     background: #00d2d3;
     border-radius: 30px;
@@ -130,12 +128,19 @@ input:-webkit-autofill {
     
 }
 
-.home .home__button:hover, .articleedit .form__submit:hover, .pageedit .form__submit:hover, .articledelete .form__submit:hover, .pagedelete .form__submit:hover, .commentdelete .form__submit:hover, .commentedit .form__submit:hover, .addarticle .form__submit:hover, .addpage .form__submit:hover, .signup .form__submit:hover, .signin .form__submit:hover, .article .form__submit:hover, .page .form__submit:hover {
+.home .home__button:hover, .install .form__submit:hover, .articleedit .form__submit:hover, .pageedit .form__submit:hover, .articledelete .form__submit:hover, .pagedelete .form__submit:hover, .commentdelete .form__submit:hover, .commentedit .form__submit:hover, .addarticle .form__submit:hover, .addpage .form__submit:hover, .signup .form__submit:hover, .signin .form__submit:hover, .article .form__submit:hover, .page .form__submit:hover {
     
     cursor: pounter;
     background: #3498db;
     padding: 10px 25px;
        
+}
+
+.step0 .form__submit::after, .step3 .form__submit::after {
+    
+    content: '>';
+    margin-left: 15px;
+    
 }
 
 .home .content__header {
@@ -195,20 +200,20 @@ input:-webkit-autofill {
     
 }
 
-.signup .nav__ul, .signin .nav__ul, .dashboard .nav__ul, .user .nav__ul, .articles .nav__ul, .add .nav__ul, .pages .nav__ul, .article .nav__ul, .page .nav__ul, .articleedit .nav__ul, .pageedit .nav__ul, .articledelete .nav__ul, .pagedelete .nav__ul, .commentdelete .nav__ul, .commentedit .nav__ul, .addarticle .nav__ul, .addpage .nav__ul {
+.signup .nav__ul, .signin .nav__ul, .dashboard .nav__ul, .install .nav__ul, .user .nav__ul, .articles .nav__ul, .add .nav__ul, .pages .nav__ul, .article .nav__ul, .page .nav__ul, .articleedit .nav__ul, .pageedit .nav__ul, .articledelete .nav__ul, .pagedelete .nav__ul, .commentdelete .nav__ul, .commentedit .nav__ul, .addarticle .nav__ul, .addpage .nav__ul {
     
     margin-right: 30px;
     
 }
 
-.signup .nav__link___choosen, .signin .nav__link___choosen, .dashboard .nav__link___choosen, .user .nav__link___choosen, .articles .articles__link___choosen, .add.add__link___choosen, .pages .pages__link___choosen, .article .article__link___choosen, .page .article__link___choosen, .articleedit .articleedit__link___choosen, .pageedit .pageedit__link___choosen, .articledelete .articledelete__link___choosen, .pagedelete .pagedelete__link___choosen, .commentedit .commentedit__link___choosen, .addarticle .addarticle__link___choosen, .addpage .addarticle__link___choosen {
+.signup .nav__link___choosen, .signin .nav__link___choosen, .dashboard .nav__link___choosen, .install .nav__link___choosen, .user .nav__link___choosen, .articles .articles__link___choosen, .add.add__link___choosen, .pages .pages__link___choosen, .article .article__link___choosen, .page .article__link___choosen, .articleedit .articleedit__link___choosen, .pageedit .pageedit__link___choosen, .articledelete .articledelete__link___choosen, .pagedelete .pagedelete__link___choosen, .commentedit .commentedit__link___choosen, .addarticle .addarticle__link___choosen, .addpage .addarticle__link___choosen {
     
     background: rgba(0,0,0,.8);
     
 }
 
 
-.signup .content__signup, .signin .content__signin, .dashboard .content__dashboard, .user .content__user, .articles .content__articles, .add .content__add, .pages .content__pages, .article .content__article, .page .content__page, .articleedit .content__articleedit, .pageedit .content__pageedit, .articledelete .content__articledelete, .pagedelete .content__pagedelete, .commentdelete .content__commentdelete, .commentedit .content__commentedit, .addarticle .content__addarticle, .addpage .content__addpage {
+.signup .content__signup, .signin .content__signin, .dashboard .content__dashboard, .install .content__install, .install .content__dashboard, .user .content__user, .articles .content__articles, .add .content__add, .pages .content__pages, .article .content__article, .page .content__page, .articleedit .content__articleedit, .pageedit .content__pageedit, .articledelete .content__articledelete, .pagedelete .content__pagedelete, .commentdelete .content__commentdelete, .commentedit .content__commentedit, .addarticle .content__addarticle, .addpage .content__addpage {
     
     padding: 20px 30px 20px 30px;
     height: 100%;
@@ -217,20 +222,20 @@ input:-webkit-autofill {
     
 }
 
-.signup .content__header, .signin .content__header, .dashboard .content__header, .user .content__header, .articles .content__header, .add .content__header, .pages .content__header, .article .content__header, .page .content__header, .articleedit .content__header, .pageedit .content__header, .articledelete .content__header, .pagedelete .content__header, .commentdelete .content__header, .commentedit .content__header, .addarticle .content__header, .addpage .content__header {
+.signup .content__header, .signin .content__header, .dashboard .content__header, .install .content__header, .user .content__header, .articles .content__header, .add .content__header, .pages .content__header, .article .content__header, .page .content__header, .articleedit .content__header, .pageedit .content__header, .articledelete .content__header, .pagedelete .content__header, .commentdelete .content__header, .commentedit .content__header, .addarticle .content__header, .addpage .content__header {
     
     padding: 30px 75px;
     
 }
 
-.signup .form__label, .signin .form__label {
+.signup .form__label, .signin .form__label, .install .form__label {
     
     font-size: 25px;
     font-family: 'SF-UI-Display-Thin';
     
 }
 
-.signup .form__input, .signin .form__input, .addarticle .form__input, .addpage .form__input {
+.signup .form__input, .signin .form__input, .addarticle .form__input, .addpage .form__input, .install .form__input {
         
     width: 200px;
     height: 35px;
@@ -242,7 +247,7 @@ input:-webkit-autofill {
     
 }
 
-.signup .error, .signin .error, .addarticle .error, .addpage .error {
+.signup .error, .signin .error, .addarticle .error, .addpage .error, .install .error {
     
     color: red;
     font-family: 'SF-UI-Display-Thin';
@@ -288,7 +293,7 @@ input:-webkit-autofill {
     
 }
 
-.dashboard .content__header___title, .user .content__header___title {
+.dashboard .content__header___title, .install .content__header___title, .user .content__header___title {
     
     margin-bottom: 40px;
     
