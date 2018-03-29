@@ -2,8 +2,17 @@
 
 $step = $_GET['step'];
 
-if ( $step == 1 && !empty( $_POST ) ) {
+if ( ( $step <= 3 ) && ( $step >= 2 ) ) {
     
+    require '../protected/config/database.php';
+
+    $dbh = new \PDO('mysql:host=' . $database['host'] . ';dbname=' . $database['name'], $database['user'], $database['password']);
+
+    
+}
+
+if ( $step == 1 && !empty( $_POST ) ) {
+        
     $data = $_POST;
     
     try {
@@ -42,10 +51,6 @@ if ( $step == 1 && !empty( $_POST ) ) {
     }
     
 }
-
-require '../protected/config/database.php';
-
-$dbh = new \PDO('mysql:host=' . $database['host'] . ';dbname=' . $database['name'], $database['user'], $database['password']);
 
 if ( $step == 2 && !empty( $_POST ) ) {
     
