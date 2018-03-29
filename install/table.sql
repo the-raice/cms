@@ -40,10 +40,10 @@ CREATE TABLE `articles` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `Comments`
+-- Структура таблицы `comments`
 --
 
-CREATE TABLE `Comments` (
+CREATE TABLE `comments` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `page_id` int(11) NOT NULL,
   `article_id` int(11) NOT NULL,
@@ -121,9 +121,9 @@ ALTER TABLE `articles`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Индексы таблицы `Comments`
+-- Индексы таблицы `comments`
 --
-ALTER TABLE `Comments`
+ALTER TABLE `comments`
   ADD UNIQUE KEY `id` (`id`);
 
 --
@@ -154,9 +154,9 @@ ALTER TABLE `users`
 ALTER TABLE `articles`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 --
--- AUTO_INCREMENT для таблицы `Comments`
+-- AUTO_INCREMENT для таблицы `comments`
 --
-ALTER TABLE `Comments`
+ALTER TABLE `comments`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 --
 -- AUTO_INCREMENT для таблицы `notifications`
