@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="/public/assets/css/default.css">
     <link rel="stylesheet" type="text/css" href="/public/assets/css/pagePreloadEffect.css" />
-	<script src="/public/assets/js/modernizr.custom.js"></script>
+    <script src="/public/assets/js/modernizr.custom.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div id="ip-container" class="ip-container">
