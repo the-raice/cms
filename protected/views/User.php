@@ -4,7 +4,7 @@
 <?php if ( !empty( $_SESSION['authorized'] ) ): ?>
                     <a class="nav__link" href="/dashboard"><li class="nav__li it1">Панель управления</li></a>
                     <a class="nav__link" href="/pages"><li class="nav__li it2">Страницы</li></a>
-                    <a class="nav__link" href="/articles"><li class="nav__li nav__link___choosen it3">Статьи</li></a>
+                    <a class="nav__link" href="/articles"><li class="nav__li it3">Статьи</li></a>
                     <a class="nav__link" href="/user/<?=\Models\User::getOneByField( $_SESSION['authorized'], 'id' )[0]['username'] ?>"><li class="nav__li nav__li___user nav__link___choosen"><?=\Models\User::getOneByField( $_SESSION['authorized'], 'id' )[0]['username'] ?></li></a>
 <?php else: ?>
                     <a class="nav__link" href="/signin"><li class="nav__li">Войти</li></a>
