@@ -15,11 +15,11 @@
                 </ul>
             </div>
             <?php
-            
+
             $c = count($pages);
             
             ?>
-            <?php for( $i = 1 ; $i < $c; ): ?>
+            <?php for( $i = 1 ; $i <= $c; ): ?>
             <div class="nav__column">
                 <ul class="nav__ul">
                 <?php foreach ( $pages as $page ): ?>
