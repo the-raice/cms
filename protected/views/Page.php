@@ -6,6 +6,7 @@
                     <a class="nav__link" href="/dashboard"><li class="nav__li it1">Панель управления</li></a>
                     <a class="nav__link" href="/pages"><li class="nav__li nav__link___choosen it2">Страницы</li></a>
                     <a class="nav__link" href="/articles"><li class="nav__li it3">Статьи</li></a>
+                    <a class="nav__link" href="/courses"><li class="nav__li it4">Курсы</li></a>
                     <a class="nav__link" href="/user/<?=$class::$user['username'] ?>"><li class="nav__li nav__li___user"><?=$class::$user['username'] ?></li></a>
 <?php else: ?>
                     <a class="nav__link" href="/signin"><li class="nav__li">Войти</li></a>
