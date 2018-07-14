@@ -5,6 +5,7 @@
                     <a class="nav__link" href="/add"><li class="nav__li nav__link___choosen">Добавить</li></a>
                     <a class="nav__link" href="/pages"><li class="nav__li">Страницы</li></a>
                     <a class="nav__link" href="/articles"><li class="nav__li">Статьи</li></a>
+                    <a class="nav__link" href="/courses"><li class="nav__li">Курсы</li></a>
                     <a class="nav__link" href="/user/<?=\Controllers\Add::$user['username'] ?>"><li class="nav__li nav__li___user"><?=\Controllers\Add::$user['username'] ?></li></a>
                 </ul>
             </nav>
