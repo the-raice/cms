@@ -53,7 +53,7 @@ class Add
             if ( !empty( $_POST ) ) {
                 
                 $title = $_POST['title'];
-                $content = strip_tags( $_POST['content'] );
+                $content = trim( strip_tags( str_replace( '</h3>', "\n", $_POST['content'] ) ) );
                 $date = date("Y-m-d");
                 $id = $_SESSION['authorized'];
                 $url =  str_replace( '', ' ', strip_tags( $_POST['url'] ) );
@@ -128,7 +128,7 @@ class Add
                     
                 }
                 
-                $url = str_replace( ' ', '-', preg_replace( "|[^\d\w ]+|i", "", str_replace( '-', ' ', $url ) ) );
+                $url = str_replace( ' ', '-', str_replace( '-', ' ', $url ) );
                 
                 $article = \Models\Article::getOneByField( $url, 'url' );
 
@@ -140,7 +140,7 @@ class Add
                 
                     echo '/article/' . $url;
                     \Models\Article::insert("'', '$title', '$content', '$date', '$id', '$url'");
-                    \Models\Notifications::insert("'', 'создал статью', '/article/$url', '$date', '$id'");
+                    \Models\Notifications::insert("'', 'создал статью', 'article/$url', '$date', '$id'");
                     
                     return true;
                     
