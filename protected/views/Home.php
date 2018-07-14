@@ -9,6 +9,7 @@
                     <a class="nav__link" href="/dashboard"><li class="nav__li it1">Панель управления</li></a>
                     <a class="nav__link" href="/pages"><li class="nav__li it2">Страницы</li></a>
                     <a class="nav__link" href="/articles"><li class="nav__li it3">Статьи</li></a>
+                    <a class="nav__link" href="/courses"><li class="nav__li it3">Курсы</li></a>
                     <a class="nav__link" href="/user/<?=\Controllers\Home::$user['username'] ?>"><li class="nav__li nav__li___user"><?=\Controllers\Home::$user['username'] ?></li></a>
 <?php endif; ?>
                 </ul>
