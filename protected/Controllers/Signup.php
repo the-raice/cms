@@ -18,7 +18,7 @@ class Signup
               
        session_start();
        
-       if ( empty( $_SESSION ) ) {
+       if ( empty( $_SESSION['authorized'] ) ) {
            
            if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
                
