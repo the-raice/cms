@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Мар 28 2018 г., 02:44
+-- Время создания: Июл 14 2018 г., 08:12
 -- Версия сервера: 5.6.37
 -- Версия PHP: 7.0.21
 
@@ -19,8 +19,21 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `test`
+-- База данных: `ecms`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `actions`
+--
+
+CREATE TABLE `actions` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `lesson_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `result` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -47,9 +60,47 @@ CREATE TABLE `comments` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `page_id` int(11) NOT NULL,
   `article_id` int(11) NOT NULL,
+  `course_id` int(11) NOT NULL,
   `author_id` int(11) NOT NULL,
   `content` text NOT NULL,
+  `rating` float NOT NULL,
   `date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `courses`
+--
+
+CREATE TABLE `courses` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `content` text NOT NULL,
+  `price` int(11) NOT NULL,
+  `access` varchar(255) NOT NULL,
+  `level` varchar(255) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  `author_id` int(11) NOT NULL,
+  `preview` text NOT NULL,
+  `rating` float NOT NULL,
+  `timeline` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `lessons`
+--
+
+CREATE TABLE `lessons` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `course_id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `content` text NOT NULL,
+  `lesson_order` int(11) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  `duration` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -84,6 +135,19 @@ CREATE TABLE `pages` (
 -- --------------------------------------------------------
 
 --
+-- Структура таблицы `purchases`
+--
+
+CREATE TABLE `purchases` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `course_id` int(11) NOT NULL,
+  `type` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Структура таблицы `settings`
 --
 
@@ -91,6 +155,20 @@ CREATE TABLE `settings` (
   `id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `admin_email` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `steps`
+--
+
+CREATE TABLE `steps` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `content` text NOT NULL,
+  `lesson_id` int(11) NOT NULL,
+  `step_order` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -115,6 +193,12 @@ CREATE TABLE `users` (
 --
 
 --
+-- Индексы таблицы `actions`
+--
+ALTER TABLE `actions`
+  ADD UNIQUE KEY `id` (`id`);
+
+--
 -- Индексы таблицы `articles`
 --
 ALTER TABLE `articles`
@@ -124,6 +208,18 @@ ALTER TABLE `articles`
 -- Индексы таблицы `comments`
 --
 ALTER TABLE `comments`
+  ADD UNIQUE KEY `id` (`id`);
+
+--
+-- Индексы таблицы `courses`
+--
+ALTER TABLE `courses`
+  ADD UNIQUE KEY `id` (`id`);
+
+--
+-- Индексы таблицы `lessons`
+--
+ALTER TABLE `lessons`
   ADD UNIQUE KEY `id` (`id`);
 
 --
@@ -139,6 +235,18 @@ ALTER TABLE `pages`
   ADD UNIQUE KEY `id` (`id`);
 
 --
+-- Индексы таблицы `purchases`
+--
+ALTER TABLE `purchases`
+  ADD UNIQUE KEY `id` (`id`);
+
+--
+-- Индексы таблицы `steps`
+--
+ALTER TABLE `steps`
+  ADD UNIQUE KEY `id` (`id`);
+
+--
 -- Индексы таблицы `users`
 --
 ALTER TABLE `users`
@@ -149,30 +257,55 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT для таблицы `actions`
+--
+ALTER TABLE `actions`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+--
 -- AUTO_INCREMENT для таблицы `articles`
 --
 ALTER TABLE `articles`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT для таблицы `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+--
+-- AUTO_INCREMENT для таблицы `courses`
+--
+ALTER TABLE `courses`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT для таблицы `lessons`
+--
+ALTER TABLE `lessons`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT для таблицы `notifications`
 --
 ALTER TABLE `notifications`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 --
 -- AUTO_INCREMENT для таблицы `pages`
 --
 ALTER TABLE `pages`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT для таблицы `purchases`
+--
+ALTER TABLE `purchases`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+--
+-- AUTO_INCREMENT для таблицы `steps`
+--
+ALTER TABLE `steps`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;COMMIT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
