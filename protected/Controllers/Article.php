@@ -60,7 +60,7 @@ class Article
             if ( !empty( $_POST ) ) {
                 
                 $title = strip_tags( $_POST['title'] );
-                $content = strip_tags( str_replace( '<h3>', "\n", str_replace( '<div>', "\n", $_POST['content']) ) );
+                $content = trim( strip_tags( str_replace( '</h3>', "\n", $_POST['content'] ) ) );
 
                 $find = array(
                     '~\[b\](.*?)\[/b\]~s',
@@ -134,7 +134,7 @@ class Article
                 $author_id = $_SESSION['authorized'];
                 $article_id = self::$article['id'];
                 
-                \Models\Comments::insert("'', '', '$article_id', '$author_id', '$comment', '$date'");
+                \Models\Comments::insert("'', '', '$article_id', '', '$author_id', '$comment', '', '$date'");
                 \Models\Notifications::insert("'', 'добавил комментарий к статье', '/comment/article/$url', '$date', '$author_id'");
                 
                 echo true;
