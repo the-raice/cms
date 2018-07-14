@@ -1,3 +1,4 @@
+
 @import url(../fonts/SF-UI-Display-Thin.css);
 @import url(../fonts/SF-UI-Display-Light.css);
 
@@ -40,14 +41,14 @@ input:-webkit-autofill {
     
 }
 
-.home .home__nav, .signup .signup__nav, .signin .signin__nav, .dashboard .dashboard__nav, .install .install__nav, .user .user__nav, .articles .articles__nav, .add .add__nav, .pages .pages__nav, .article .article__nav, .page .page__nav, .articleedit .articleedit__nav, .pageedit .pageedit__nav, .articledelete .articledelete__nav, .pagedelete .pagedelete__nav, .commentdelete .commentdelete__nav, .commentedit .commentedit__nav, .addarticle .addarticle__nav, .addpage .addpage__nav {
+.home .home__nav, .signup .signup__nav, .signin .signin__nav, .dashboard .dashboard__nav, .install .install__nav, .user .user__nav, .articles .articles__nav, .courses .courses__nav, .add .add__nav, .pages .pages__nav, .article .article__nav, .course .course__nav, .buycourse .buycourse__nav, .page .page__nav, .lesson .lesson__nav, .page .page__nav, .articleedit .articleedit__nav, .pageedit .pageedit__nav, .articledelete .articledelete__nav, .pagedelete .pagedelete__nav, .commentdelete .commentdelete__nav, .commentedit .commentedit__nav, .addarticle .addarticle__nav, .addpage .addpage__nav {
     
     width: 100%;
     text-align: right;
     
 }
 
-.home .nav__li, .signup .nav__li, .signin .nav__li, .dashboard .nav__li, .install .nav__li, .user .nav__li, .articles .nav__li, .add .nav__li, .pages .nav__li, .article .nav__li, .page .nav__li, .pages .article__add, .articles .article__add, .add .article__add, .pages .article__add, .articleedit .nav__li, .pageedit .nav__li, .articledelete .nav__li, .pagedelete .nav__li, .commentdelete .nav__li, .commentedit .nav__li, .addarticle .nav__li, .addpage .nav__li {
+.home .nav__li, .signup .nav__li, .signin .nav__li, .dashboard .nav__li, .install .nav__li, .user .nav__li, .articles .nav__li, .courses .nav__li, .add .nav__li, .pages .nav__li, .article .nav__li, .course .nav__li, .buycourse .nav__li, .lesson .nav__li, .page .nav__li, .pages .article__add, .articles .article__add, .courses .course__add, .add .article__add, .pages .article__add, .articleedit .nav__li, .pageedit .nav__li, .articledelete .nav__li, .pagedelete .nav__li, .commentdelete .nav__li, .commentedit .nav__li, .addarticle .nav__li, .addpage .nav__li {
     
     display: inline;
     margin-right: 30px;
@@ -62,7 +63,7 @@ input:-webkit-autofill {
     
 }
 
-.home .nav__li:hover, .signup .nav__li:hover, .signin .nav__li:hover, .dashboard .nav__li:hover, .install .nav__li:hover, .user .nav__li:hover, .articles .nav__li:hover, .add .nav__li:hover, .pages .nav__li:hover, .article .nav__li:hover, .page .nav__li:hover, .articles .article__add:hover, .add .article__add:hover, .pages .article__add:hover, .articleedit .nav__li:hover, .pageedit .nav__li:hover, .articledelete .nav__li:hover, .pagedelete .nav__li:hover, .commentdelete .nav__li:hover, .commentedit .nav__li:hover, .addarticle .nav__li:hover, .addpage .nav__li:hover {
+.home .nav__li:hover, .signup .nav__li:hover, .signin .nav__li:hover, .dashboard .nav__li:hover, .install .nav__li:hover, .user .nav__li:hover, .articles .nav__li:hover, .courses .nav__li:hover, .add .nav__li:hover, .pages .nav__li:hover, .article .nav__li:hover, .course .nav__li:hover, .buycourse .nav__li:hover, .lesson .nav__li:hover, .page .nav__li:hover, .articles .article__add:hover, .courses .course__add:hover, .add .article__add:hover, .pages .article__add:hover, .articleedit .nav__li:hover, .pageedit .nav__li:hover, .articledelete .nav__li:hover, .pagedelete .nav__li:hover, .commentdelete .nav__li:hover, .commentedit .nav__li:hover, .addarticle .nav__li:hover, .addpage .nav__li:hover {
     
     color: white;
     cursor: pounter; 
@@ -71,7 +72,7 @@ input:-webkit-autofill {
     
 }
 
-.home .nav__link, .signup .nav__link, .signin .nav__link, .dashboard .nav__link, .install .nav__link, .user .nav__link, .articles .nav__link, .add .nav__link, .pages .nav__link, .article .nav__link, .page .nav__link, .articles .article__add, .add .article__add, .pages .article__add, .articleedit .nav__link, .pageedit .nav__link, .articledelete .nav__link, .pagedelete .nav__link, .commentdelete .nav__link, .commentedit .nav__link, .addarticle .nav__link, .addpage .nav__link {
+.home .nav__link, .signup .nav__link, .signin .nav__link, .dashboard .nav__link, .install .nav__link, .user .nav__link, .articles .nav__link, .courses .nav__link, .add .nav__link, .pages .nav__link, .article .nav__link, .course .nav__link, .buycourse .nav__link, .lesson .nav__link, .page .nav__link, .articles .article__add, .courses .course__add, .add .article__add, .pages .article__add, .articleedit .nav__link, .pageedit .nav__link, .articledelete .nav__link, .pagedelete .nav__link, .commentdelete .nav__link, .commentedit .nav__link, .addarticle .nav__link, .addpage .nav__link {
     
     color: black;
     text-decoration: none;
@@ -79,7 +80,7 @@ input:-webkit-autofill {
     
 }
 
-.home .nav__link___choosen, .signup .nav__link___choosen, .signin .nav__link___choosen, .dashboard .nav__link___choosen, .install .nav__link___choosen, .user .nav__link___choosen, .articles .nav__link___choosen, .add .nav__link___choosen, .pages .nav__link___choosen, .article .nav__link___choosen, .page .nav__link___choosen, .articles .article__add, .add .article__add, .pages .article__add, .articleedit .nav__link___choosen, .pageedit .nav__link___choosen, .articledelete .nav__link___choosen, .pagedelete .nav__link___choosen, .commentdelete .nav__link___choosen, .commentedit .nav__link___choosen, .addarticle .nav__link___choosen, .addpage .nav__link___choosen, .dashboard nav .it1, .pages nav .it2, .articles nav .it3, .addarticle nav .it3, .addpage nav .it2, .article nav .it3, .articledelete nav .it3, .articleedit nav .it3, .commentdelete nav .it1, .commentedit nav .it1, .pagedelete nav .it2, .pageedit nav .it2, .signin nav .it3, .signup nav .it2, .step0 nav .it1, .step1 nav .it2, .step2 nav .it3, .step3 nav .it4 {
+.home .nav__link___choosen, .signup .nav__link___choosen, .signin .nav__link___choosen, .dashboard .nav__link___choosen, .install .nav__link___choosen, .user .nav__link___choosen, .articles .nav__link___choosen, .courses .nav__link___choosen, .add .nav__link___choosen, .pages .nav__link___choosen, .article .nav__link___choosen, .course .nav__link___choosen, .buycourse .nav__link___choosen, .lesson .nav__link___choosen, .page .nav__link___choosen, .articles .article__add, .courses .course__add, .add .article__add, .pages .article__add, .articleedit .nav__link___choosen, .pageedit .nav__link___choosen, .articledelete .nav__link___choosen, .pagedelete .nav__link___choosen, .commentdelete .nav__link___choosen, .commentedit .nav__link___choosen, .addarticle .nav__link___choosen, .addpage .nav__link___choosen, .dashboard nav .it1, .pages nav .it2, .articles nav .it3, .courses nav .it4, .addarticle nav .it3, .addpage nav .it2, .article nav .it3, .course nav .it4, .buycourse nav .it4, .lesson nav .it3, .articledelete nav .it3, .articleedit nav .it3, .commentdelete nav .it1, .commentedit nav .it1, .pagedelete nav .it2, .pageedit nav .it2, .signin nav .it3, .signup nav .it2, .step0 nav .it1, .step1 nav .it2, .step2 nav .it3, .step3 nav .it4 {
     
     background: #00d2d3 !IMPORTANT;
     color: white !IMPORTANT;
@@ -111,7 +112,7 @@ input:-webkit-autofill {
     
 }
 
-.home .home__button, .install .form__submit, .articleedit .form__submit, .pageedit .form__submit, .page .form__submit, .articledelete .form__submit, .pagedelete .form__submit, .commentdelete .form__submit, .commentedit .form__submit, .addarticle .form__submit, .addpage .form__submit, .signup .form__submit, .signin .form__submit, .article .form__submit , .page .form__submit {
+.home .home__button, .install .form__submit, .articleedit .form__submit, .pageedit .form__submit, .page .form__submit, .articledelete .form__submit, .pagedelete .form__submit, .commentdelete .form__submit, .commentedit .form__submit, .addarticle .form__submit, .addpage .form__submit, .signup .form__submit, .signin .form__submit, .article .form__submit, .course .form__submit, .buycourse .form__submit, .lesson .form__submit , .page .form__submit, .buycourse .buycourse__button, .lesson .lesson__button {
     
     background: #00d2d3;
     border-radius: 30px;
@@ -128,7 +129,7 @@ input:-webkit-autofill {
     
 }
 
-.home .home__button:hover, .install .form__submit:hover, .articleedit .form__submit:hover, .pageedit .form__submit:hover, .articledelete .form__submit:hover, .pagedelete .form__submit:hover, .commentdelete .form__submit:hover, .commentedit .form__submit:hover, .addarticle .form__submit:hover, .addpage .form__submit:hover, .signup .form__submit:hover, .signin .form__submit:hover, .article .form__submit:hover, .page .form__submit:hover {
+.home .home__button:hover, .install .form__submit:hover, .articleedit .form__submit:hover, .pageedit .form__submit:hover, .articledelete .form__submit:hover, .pagedelete .form__submit:hover, .commentdelete .form__submit:hover, .commentedit .form__submit:hover, .addarticle .form__submit:hover, .addpage .form__submit:hover, .signup .form__submit:hover, .signin .form__submit:hover, .article .form__submit:hover, .course .form__submit:hover, .buycourse .form__submit:hover, .lesson .form__submit:hover, .page .form__submit:hover, .buycourse .buycourse__button:hover, .lesson .lesson__button:hover {
     
     cursor: pounter;
     background: #3498db;
@@ -200,20 +201,20 @@ input:-webkit-autofill {
     
 }
 
-.signup .nav__ul, .signin .nav__ul, .dashboard .nav__ul, .install .nav__ul, .user .nav__ul, .articles .nav__ul, .add .nav__ul, .pages .nav__ul, .article .nav__ul, .page .nav__ul, .articleedit .nav__ul, .pageedit .nav__ul, .articledelete .nav__ul, .pagedelete .nav__ul, .commentdelete .nav__ul, .commentedit .nav__ul, .addarticle .nav__ul, .addpage .nav__ul {
+.signup .nav__ul, .signin .nav__ul, .dashboard .nav__ul, .install .nav__ul, .user .nav__ul, .articles .nav__ul, .courses .nav__ul, .add .nav__ul, .pages .nav__ul, .article .nav__ul, .course .nav__ul, .buycourse .nav__ul, .lesson .nav__ul, .page .nav__ul, .articleedit .nav__ul, .pageedit .nav__ul, .articledelete .nav__ul, .pagedelete .nav__ul, .commentdelete .nav__ul, .commentedit .nav__ul, .addarticle .nav__ul, .addpage .nav__ul {
     
     margin-right: 30px;
     
 }
 
-.signup .nav__link___choosen, .signin .nav__link___choosen, .dashboard .nav__link___choosen, .install .nav__link___choosen, .user .nav__link___choosen, .articles .articles__link___choosen, .add.add__link___choosen, .pages .pages__link___choosen, .article .article__link___choosen, .page .article__link___choosen, .articleedit .articleedit__link___choosen, .pageedit .pageedit__link___choosen, .articledelete .articledelete__link___choosen, .pagedelete .pagedelete__link___choosen, .commentedit .commentedit__link___choosen, .addarticle .addarticle__link___choosen, .addpage .addarticle__link___choosen {
+.signup .nav__link___choosen, .signin .nav__link___choosen, .dashboard .nav__link___choosen, .install .nav__link___choosen, .user .nav__link___choosen, .articles .articles__link___choosen, .courses .courses__link___choosen, .add.add__link___choosen, .pages .pages__link___choosen, .article .article__link___choosen, .course .course__link___choosen, .buycourse .course__link___choosen, .lesson .article__link___choosen, .page .article__link___choosen, .articleedit .articleedit__link___choosen, .pageedit .pageedit__link___choosen, .articledelete .articledelete__link___choosen, .pagedelete .pagedelete__link___choosen, .commentedit .commentedit__link___choosen, .addarticle .addarticle__link___choosen, .addpage .addarticle__link___choosen {
     
     background: rgba(0,0,0,.8);
     
 }
 
 
-.signup .content__signup, .signin .content__signin, .dashboard .content__dashboard, .install .content__install, .install .content__dashboard, .user .content__user, .articles .content__articles, .add .content__add, .pages .content__pages, .article .content__article, .page .content__page, .articleedit .content__articleedit, .pageedit .content__pageedit, .articledelete .content__articledelete, .pagedelete .content__pagedelete, .commentdelete .content__commentdelete, .commentedit .content__commentedit, .addarticle .content__addarticle, .addpage .content__addpage {
+.signup .content__signup, .signin .content__signin, .dashboard .content__dashboard, .install .content__install, .install .content__dashboard, .user .content__user, .articles .content__articles, .courses .content__courses, .course .content__course, .add .content__add, .pages .content__pages, .article .content__article, .course .content__course, .buycourse .content__buycourse, .lesson .content__lesson, .page .content__page, .articleedit .content__articleedit, .pageedit .content__pageedit, .articledelete .content__articledelete, .pagedelete .content__pagedelete, .commentdelete .content__commentdelete, .commentedit .content__commentedit, .addarticle .content__addarticle, .addpage .content__addpage {
     
     padding: 20px 30px 20px 30px;
     height: 100%;
@@ -222,7 +223,7 @@ input:-webkit-autofill {
     
 }
 
-.signup .content__header, .signin .content__header, .dashboard .content__header, .install .content__header, .user .content__header, .articles .content__header, .add .content__header, .pages .content__header, .article .content__header, .page .content__header, .articleedit .content__header, .pageedit .content__header, .articledelete .content__header, .pagedelete .content__header, .commentdelete .content__header, .commentedit .content__header, .addarticle .content__header, .addpage .content__header {
+.signup .content__header, .signin .content__header, .dashboard .content__header, .install .content__header, .user .content__header, .articles .content__header, .courses .content__header, .add .content__header, .pages .content__header, .article .content__header, .course .content__header, .buycourse .content__header, .lesson .content__header, .page .content__header, .articleedit .content__header, .pageedit .content__header, .articledelete .content__header, .pagedelete .content__header, .commentdelete .content__header, .commentedit .content__header, .addarticle .content__header, .addpage .content__header {
     
     padding: 30px 75px;
     
@@ -264,7 +265,7 @@ input:-webkit-autofill {
     
 }
 
-.footer .nav__column, .articles .article__column, .add .article__column, .pages .article__column {
+.footer .nav__column, .articles .article__column, .courses .course__column, .course .lesson__column, .add .article__column, .pages .article__column {
     
     display: inline-block;
     margin-right: 100px;
@@ -272,7 +273,7 @@ input:-webkit-autofill {
     
 }
 
-.footer .nav__ul, .article .comment__metabar, .page .comment__metabar {
+.footer .nav__ul, .article .comment__metabar, .course .comment__metabar, .buycourse .comment__metabar, .lesson .comment__metabar, .page .comment__metabar {
     
     list-style: none;
     
@@ -342,7 +343,7 @@ input:-webkit-autofill {
     
 }
 
-.dashboard .content__article a, .user .content__article a {
+.dashboard .content__article a, .user .content__article a, .page article a, .article article a, .course article a, .buycourse article a {
     
     font-family: 'SF-UI-Display-Light';
     text-decoration: none;
@@ -357,7 +358,7 @@ input:-webkit-autofill {
 }
 
 
-.articles .content__description, .add .content__description, .pages .content__description {
+.articles .content__description, .courses .content__description, .course .content__description, .add .content__description, .pages .content__description {
     
     font-weight: 300;
     font-size: 30px;
@@ -367,7 +368,7 @@ input:-webkit-autofill {
 
 }
 
-.articles .articles__title, .add .articles__title, .pages .pages__title {
+.articles .articles__title, .courses .courses__title, .add .articles__title, .pages .pages__title {
     
     margin-bottom: 40px;
     font-size: 40px;
@@ -375,7 +376,7 @@ input:-webkit-autofill {
     
 }
 
-.articles .content__article, .add .content__article, .pages .content__article {
+.articles .content__article, .courses .content__course, .course .content__lesson, .add .content__article, .pages .content__article {
     
     justify-content: left;
     text-align: left;
@@ -384,32 +385,32 @@ input:-webkit-autofill {
     
 }
 
-.articles .content__article:first-child, .add .content__article:first-child, .pages .content__article:first-child {
+.articles .content__article:first-child, .courses .content__course:first-child, .course .content__lesson:first-child, .add .content__article:first-child, .pages .content__article:first-child {
     
         
     margin-top: 40px;
         
 }
 
-.articles .content__article:nth-child(2n), .add .content__article:nth-child(2n), .pages .content__article:nth-child(2n) {
+.articles .content__article:nth-child(2n), .courses .content__course:nth-child(2n), .course .content__lesson:nth-child(2n), .add .content__article:nth-child(2n), .pages .content__article:nth-child(2n) {
     
     background: rgba(238,238,238,.35);
     
 }
 
-.articles .content__article:nth-child(2n+1), .add .content__article:nth-child(2n+1), .pages .content__article:nth-child(2n+1) {
+.articles .content__article:nth-child(2n+1), .courses .content__course:nth-child(2n+1), .course .content__lesson:nth-child(2n+1), .add .content__article:nth-child(2n+1), .pages .content__article:nth-child(2n+1) {
     
     background: white;
     
 }
 
-.articles .article__title, .add .article__title, .pages .article__title {
+.articles .article__title, .courses .course__title, .course .lesson__title, .add .article__title, .pages .article__title {
     
     font-weight: 600;
     
 }
 
-.articles .article__text, .add .article__text, .pages .article__text {
+.articles .article__text, .courses .course__text, .course .lesson__text, .add .article__text, .pages .article__text {
     
     font-size: 21px;
     line-height: 1.67;
@@ -418,14 +419,15 @@ input:-webkit-autofill {
     
 }
 
-.articles .article__link, .add .article__link, .pages .article__link {
+.articles .article__link, .courses .course__link, .course .lesson__link, .add .article__link, .pages .article__link {
     
     color: #0a0c0a;
     text-decoration: none;
+    font-family: 'SF-UI-Display-Thin' !IMPORTANT;
     
 }
 
-.articles .content__metabar, .add .content__metabar, .pages .content__metabar, .article .content__metabar, .page .content__metabar, .articleedit .content__metabar, .pageedit .content__metabar, .addarticle .content__metabar, .addpage .content__metabar {
+.articles .content__metabar, .courses .content__metabar, .course .lesson__metabar, .add .content__metabar, .pages .content__metabar, .article .content__metabar, .course .content__metabar, .buycourse .content__metabar, .lesson .content__metabar, .page .content__metabar, .articleedit .content__metabar, .pageedit .content__metabar, .addarticle .content__metabar, .addpage .content__metabar {
     
     width: 100%;
     text-align: left;
@@ -433,7 +435,7 @@ input:-webkit-autofill {
     
 }
 
-.articles .article__column___right, .add .article__column___right, .pages .article__column___right {
+.articles .article__column___right, .courses .course__column___right, .course .lesson__column___right, .add .article__column___right, .pages .article__column___right {
     
     display: inline;
     float: right;
@@ -441,13 +443,13 @@ input:-webkit-autofill {
     
 }
 
-.articles .metabar__list h3, .add .metabar__list h3, .pages .metabar__list h3, .article .metabar__list h3, .article .comment__metabar h3, .page .metabar__list h3, .page .comment__metabar h3, .articleedit .metabar__list h3, .pageedit .metabar__list h3, .page .metabar__list h3, .addarticle .metabar__list h3, .addpage .metabar__list h3 {
+.articles .metabar__list h3, .courses .metabar__list h3, .course .metabar__list h3, .add .metabar__list h3, .pages .metabar__list h3, .article .metabar__list h3, .course .content__metabar h3, .buycourse .content__metabar h3, .lesson .metabar__list h3, .article .comment__metabar h3, .course .comment__metabar h3, .buycourse .comment__metabar h3, .lesson .comment__metabar h3, .page .metabar__list h3, .page .comment__metabar h3, .articleedit .metabar__list h3, .pageedit .metabar__list h3, .page .metabar__list h3, .addarticle .metabar__list h3, .addpage .metabar__list h3 {
     
     display: inline;
     
 }
 
-.articles .metabar__list li, .add .metabar__list li, .pages .metabar__list li, .article .metabar__list li, .article .comment__metabar li, .page .metabar__list li, .page .comment__metabar li, .articleedit .metabar__list li, .pageedit .metabar__list li, .addarticle .metabar__list li, .addpage .metabar__list li, .dashboard .metabar__list li, .user .metabar__list li {
+.articles .metabar__list li, .course .metabar__list li, .courses .metabar__list li, .add .metabar__list li, .pages .metabar__list li, .article .metabar__list li, .course .content__metabar li, .buycourse .content__metabar li, .lesson .metabar__list li, .article .comment__metabar li, .course .comment__metabar li, .buycourse .comment__metabar li, .lesson .comment__metabar li, .page .metabar__list li, .page .comment__metabar li, .articleedit .metabar__list li, .pageedit .metabar__list li, .addarticle .metabar__list li, .addpage .metabar__list li, .dashboard .metabar__list li, .user .metabar__list li {
     
     list-style: none;
     display: inline;
@@ -455,7 +457,7 @@ input:-webkit-autofill {
     
 }
 
-.articles .author__image, .add .author__image, .pages .author__image, .article .author__image, .page .author__image, .articleedit .author__image, .pageedit .author__image, .addarticle .author__image, .addpage .author__image {
+.articles .author__image, .courses .author__image, .course .author__image, .add .author__image, .pages .author__image, .article .author__image, .course .author__image, .buycourse .author__image, .lesson .author__image, .page .author__image, .articleedit .author__image, .pageedit .author__image, .addarticle .author__image, .addpage .author__image {
     
     width: 50px;
     height: 50px;
@@ -465,55 +467,62 @@ input:-webkit-autofill {
     
 }
 
-.articles .metabar__option, .articles .article__link, .add .metabar__option, .add .article__link, .pages .metabar__option, .pages .article__link, .article .metabar__option, .article .article__link, .page .metabar__option, .page .article__link, .articleedit .metabar__option, .pageedit .metabar__option, .addarticle .metabar__option, .addarticle .article__url___link, .addpage .metabar__option, .addpage .article__url___link {
+.articles .metabar__option, .articles .article__link, .courses .metabar__option, .courses .course__link, .course .metabar__option, .course .lesson__link, .add .metabar__option, .add .article__link, .pages .metabar__option, .pages .article__link, .article .metabar__option, .course .metabar__option, .buycourse .metabar__option, .lesson .metabar__option, .article .article__link, .course .course__link, .buycourse .course__link, .lesson .article__link, .page .metabar__option, .page .article__link, .articleedit .metabar__option, .pageedit .metabar__option, .addarticle .metabar__option, .addarticle .article__url___link, .addpage .metabar__option, .addpage .article__url___link {
     
     text-decoration: none !IMPORTANT;
     padding: 10px 15px;
     color: #0a0c0a;
     border-radius: 30px;
+    font-family: 'SF-UI-Display-Thin' !IMPORTANT;
     
 }
 
-.articles .content__article:nth-child(2n) .metabar__option:hover, .articles .content__article:nth-child(2n) .article__link:hover, .add .content__article:nth-child(2n) .metabar__option:hover, .add .content__article:nth-child(2n) .article__link:hover, .pages .content__article:nth-child(2n) .metabar__option:hover, .pages .content__article:nth-child(2n) .article__link:hover, .article .comments .metabar__option:hover, .article .comments .article__link:hover, .commentedit .comments .metabar__option:hover, .commentedit .comments .article__link:hover, .page .comments .metabar__option:hover, .page .comments .article__link:hover, .articleedit .comments .article__link:hover, .pageedit .comments .article__link:hover, .addarticle .comments .article__link:hover, .addpage .comments .article__link:hover  {
+.articles .content__article:nth-child(2n) .metabar__option:hover, .articles .content__article:nth-child(2n) .article__link:hover, .course .content__lesson:nth-child(2n) .metabar__option:hover, .course .content__lesson:nth-child(2n) .lesson__link:hover, .courses .content__course:nth-child(2n) .metabar__option:hover, .courses .content__course:nth-child(2n) .course__link:hover, .add .content__article:nth-child(2n) .metabar__option:hover, .add .content__article:nth-child(2n) .article__link:hover, .pages .content__article:nth-child(2n) .metabar__option:hover, .pages .content__article:nth-child(2n) .article__link:hover, .article .comments .metabar__option:hover, .course .comments .metabar__option:hover, .buycourse .comments .metabar__option:hover, .lesson .comments .metabar__option:hover, .article .comments .article__link:hover, .course .comments .course__link:hover, .buycourse .comments .course__link:hover, .lesson .comments .article__link:hover, .commentedit .comments .metabar__option:hover, .commentedit .comments .article__link:hover, .page .comments .metabar__option:hover, .page .comments .article__link:hover, .articleedit .comments .article__link:hover, .pageedit .comments .article__link:hover, .addarticle .comments .article__link:hover, .addpage .comments .article__link:hover  {
    
     background: white;
     
 }
 
-.articles .content__article:nth-child(2n+1) .metabar__option:hover, .articles .content__article:nth-child(2n+1) .article__link:hover, .add .content__article:nth-child(2n+1) .metabar__option:hover, .add .content__article:nth-child(2n+1) .article__link:hover, .pages .content__article:nth-child(2n+1) .metabar__option:hover, .pages .content__article:nth-child(2n+1) .article__link:hover, .article .metabar__option:hover, .article .article__link:hover, .page .metabar__option:hover, .page .article__link:hover, .articleedit .metabar__option:hover, .pageedit .metabar__option:hover, .articleedit .article__link:hover, .pageedit .article__link:hover, .addarticle .metabar__option:hover, .addarticle .article__link:hover, .addarticle .article__url___link, .addpage .metabar__option:hover, .addpage .article__link:hover, .addpage .article__url___link {
+.articles .content__article:nth-child(2n+1) .metabar__option:hover, .articles .content__article:nth-child(2n+1) .article__link:hover, .course .content__lesson:nth-child(2n+1) .metabar__option:hover, .course .content__lesson:nth-child(2n+1) .lesson__link:hover, .courses .content__course:nth-child(2n+1) .metabar__option:hover, .courses .content__course:nth-child(2n+1) .course__link:hover, .add .content__article:nth-child(2n+1) .metabar__option:hover, .add .content__article:nth-child(2n+1) .article__link:hover, .pages .content__article:nth-child(2n+1) .metabar__option:hover, .pages .content__article:nth-child(2n+1) .article__link:hover, .article .metabar__option:hover, .course .metabar__option:hover, .buycourse .metabar__option:hover, .lesson .metabar__option:hover, .article .article__link:hover, .course .course__link:hover, .buycourse .course__link:hover, .lesson .article__link:hover, .page .metabar__option:hover, .page .article__link:hover, .articleedit .metabar__option:hover, .pageedit .metabar__option:hover, .articleedit .article__link:hover, .pageedit .article__link:hover, .addarticle .metabar__option:hover, .addarticle .article__link:hover, .addarticle .article__url___link, .addpage .metabar__option:hover, .addpage .article__link:hover, .addpage .article__url___link {
     
     background: rgba(238,238,238,.35);
     
 }
 
-.article .header__article, .page .header__article, .articleedit .header__articleedit, .pageedit .header__articleedit, .addarticle .header__articleedit, .addpage .header__articleedit {
+.article .header__article, .course .header__course, .buycourse .header__course, .lesson .header__article, .page .header__article, .articleedit .header__articleedit, .pageedit .header__articleedit, .addarticle .header__articleedit, .addpage .header__articleedit {
     
     background: white;
     
     
 }
 
-.article .content__metabar, .page .content__metabar, .articleedit .content__metabar, .pageedit .content__metabar, .addarticle .content__metabar, .addpage .content__metabar {
+.article .content__metabar, .course .content__metabar, .buycourse .content__metabar, .lesson .content__metabar, .page .content__metabar, .articleedit .content__metabar, .pageedit .content__metabar, .addarticle .content__metabar, .addpage .content__metabar {
     
     margin-top: 40px;
     padding: 0 !IMPORTANT;
     
 }
 
-.article .article__text, .page .article__text, .articleedit .article__text, .pageedit .article__text, .addarticle .article__text, .addpage .article__text {
+.articleedit article h3, .article article h3, .course article h3, .buycourse article h3  {
+    
+    font-size: 23px !IMPORTANT;
+    
+}
+
+.article .article__text, .course .course__text, .buycourse .course__text, .lesson .article__text, .page .article__text, .articleedit .article__text, .pageedit .article__text, .addarticle .article__text, .addpage .article__text {
     
     text-indent: 20px;
     margin-bottom: 27px;
     
 }
 
-.article .comments, .page .comments {
+.article .comments, .course .comments, .buycourse .comments, .lesson .comments, .page .comments {
     
    margin-top: 50px;
     
 }
 
-.article .comment__container, .commentedit .comment__container, .page .comment__container {
+.article .comment__container, .course .comment__container, .buycourse .comment__container, .lesson .comment__container, .commentedit .comment__container, .page .comment__container {
     
     padding: 30px 40px;
     width: 650px;
@@ -523,13 +532,13 @@ input:-webkit-autofill {
     
 }
 
-.article .comment__content, .commentedit .comment__content, .page .comment__content {
+.article .comment__content, .course .comment__content, .buycourse .comment__content, .lesson .comment__content, .commentedit .comment__content, .page .comment__content {
     
     margin-bottom: 40px;
     
 }
 
-.article b, .page b {
+.article b, .course b, .buycourse b, .lesson b, .page b {
     
     font-family: 'SF-UI-Display-Light' !IMPORTANT;
     
@@ -560,7 +569,7 @@ input:-webkit-autofill {
     
     text-indent: 20px !IMPORTANT;
     font-size: 21px !IMPORTANT;
-    line-height: 1.67 !IMPORTANT;
+    /*line-height: 1.67 !IMPORTANT;*/
     
 }
 
@@ -581,6 +590,164 @@ input:-webkit-autofill {
 }
 
 .commentedit .comment__container {
+    
+    margin-top: 50px;
+    
+}
+
+.error404 {
+    
+    padding-top: 300px;
+    text-align: center;
+    
+}
+
+.error404 .error__tile {
+    
+    font-size: 45px;
+    font-family: 'SF-UI-Display-Thin';
+    
+}
+
+.buycourse .course__details li {
+    
+    display: inline-block;
+    list-style: none;
+    margin-right: 70px;
+    
+}
+
+.buycourse .comment__rating, .course .comment__rating {
+    
+    float: right;
+    width: 8rem;
+    height: 100%;
+    
+}
+
+.buycourse .comment__authorname, .course .comment__authorname {
+    
+    float: left;
+    
+    
+}
+
+.buycourse .nd-stars, .course .nd-stars {
+    
+    height: 1.5rem;
+    overflow: hidden;
+    display: inline-block;
+    background: url(//d125fmws0bore1.cloudfront.net/assets/svgs/icon-star-large-gray-5f2b46347042f6b0a6aafaf1e8d75096a900749c5667bdf4bcf930b08cbab25f.svg) repeat-x repeat-x;
+    margin: 0.25rem 0 -0.125rem;
+    
+}
+
+.buycourse .nd-stars > div, .course .nd-stars > div {
+    
+    float: left;
+    height: 1.5rem;
+    background: url(//d125fmws0bore1.cloudfront.net/assets/svgs/icon-star-large-yellow-21e9f0c3d65b3c7ac52f03f2c0ab3c99a8c3c3a2c1e81c5a99ff7633dfc9e0ae.svg) repeat-x;
+    
+}
+
+.buycourse .buycourse__button, .lesson .lesson__button {
+    
+    font-family: 'SF-UI-Display-Thin' !IMPORTANT;
+    font-weight: 100;
+    text-decoration: none;
+    
+}
+
+.course #reviewStars-input input:checked ~ label, .course #reviewStars-input label, .course #reviewStars-input label:hover, .course #reviewStars-input label:hover ~ label {
+    
+  background: url('/assets/images/rating.png') no-repeat;
+  
+}
+
+.course #reviewStars-input {
+  
+  padding-top: 10px;
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
+  float: left;
+  margin-right: 20px;
+  
+}
+
+.course #reviewStars-input input {
+    
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  width: 27px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  
+}
+
+.course #reviewStars-input input:checked ~ label {
+    
+  background-position: 0 -23px;
+  height: 24px;
+  width: 27px;
+  
+}
+
+.course #reviewStars-input label {
+    
+  background-position: 0 1.5px;
+  height: 24px;
+  width: 27px;
+  float: right;
+  cursor: pointer;
+  margin-right: 10px;
+  
+  position: relative;
+  z-index: 1;
+  
+}
+
+.course #reviewStars-input label:hover, .course #reviewStars-input label:hover ~ label {
+    
+  background-position: 0 -22px;
+  height: 24px;
+  width: 27px;
+  
+}
+
+.course #reviewStars-input #star-0 {
+    
+  left: 0px;
+  
+}
+
+.course #reviewStars-input #star-1 {
+    
+  left: 53px;
+  
+}
+
+.course #reviewStars-input #star-2 {
+    
+  left: 106px;
+  
+}
+
+.course #reviewStars-input #star-3 {
+    
+  left: 159px;
+  
+}
+
+.course .header__course {
+    
+    margin-bottom: 50px;
+    
+}
+
+.course .content__metabar {
     
     margin-top: 50px;
     
