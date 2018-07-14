@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/default.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/pagePreloadEffect.css" />
     <script src="/assets/js/modernizr.custom.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/assets/js/jquery.js"></script>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -25,7 +25,7 @@
             $pages = \Models\Page::getAll();
             
             ?>
-            <?php if ( $class != 'home' && $class != 'signin' && $class != 'signup' && $class != 'article' && $class != 'page' && $class != 'user' ): ?>
+            <?php if ( $class != 'home' && $class != 'buycourse' && $class != 'signin' && $class != 'signup' && $class != 'article' && $class != 'page' && $class != 'user' ): ?>
                 <div class="content__<?=$class?>">
                     <nav class="<?=$class?>__nav">
                         <ul class="nav__ul">
@@ -34,7 +34,8 @@
                         $menu = [
                                     '/dashboard' => 'Панель управления',
                                     '/pages' => 'Страницы',
-                                    '/articles' => 'Статьи'
+                                    '/articles' => 'Статьи',
+                                    '/courses' => 'Курсы'
                                 ];
                                 
                         $i = 1;
