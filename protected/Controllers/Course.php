@@ -103,7 +103,7 @@ class Course
                 
             } else {
                 
-                parent::getView( 'courseEdit', 'Редактирование статьи' );
+                parent::getView( 'courseEdit', 'Редактирование курса' );
                 
             }
             
@@ -119,7 +119,7 @@ class Course
                     
                 } else {
                     
-                    parent::getView('courseDelete', 'Удаление статьи');
+                    parent::getView('courseDelete', 'Удаление курса');
                     
                 }
             
