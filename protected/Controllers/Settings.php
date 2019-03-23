@@ -19,6 +19,7 @@ class Settings
 		if ( !empty( $_SESSION['authorized'] ) ) {
            
 		    self::$user = \Models\User::getOneById( $_SESSION['authorized'] )[0];
+			self::$settings = \Models\Settings::getAll()[0];
 		   
 		} else {
 			
@@ -44,7 +45,7 @@ class Settings
 	public function main () 
 	{
 		
-		parent::getView( 'SettingsMain', 'Панель управления: настройки' );var_dump(self::$user);
+		parent::getView( 'SettingsMain', 'Панель управления: настройки' );
 		
 	}
     
