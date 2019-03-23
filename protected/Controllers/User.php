@@ -21,10 +21,19 @@ class User
         $url = strtolower( $url);
 
         self::$user = \Models\User::getOneByField( $url, 'username' )[0];
-        self::$articles = \Models\Article::getOneByField( self::$user['id'], 'author_id' );
-        self::$notifications = \Models\Notifications::getOneByField( self::$user['id'], 'author_id' );
-        
-        parent::getView( $this->getName(), self::$user['username'] );
+		
+		if ( !empty ( self::$user ) ) {
+		
+			self::$articles = \Models\Article::getOneByField( self::$user['id'], 'author_id' );
+			self::$notifications = \Models\Notifications::getOneByField( self::$user['id'], 'author_id' );
+			
+			parent::getView( $this->getName(), self::$user['username'] );
+			
+		} else {
+			
+			header("Location: /");
+			
+		}
 
     }
     
