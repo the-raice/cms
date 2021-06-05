@@ -82,11 +82,11 @@ if ( $step == 2 && !empty( $_POST ) ) {
                 
                 $password = sha1( 'g64%$^*&*_' . $password . 'nHGH6654$%^' );
                 
-                $sth = $dbh->prepare("INSERT INTO users VALUES('', 'admin', '', '', '$email', '/assets/images/user.png', '$username', '$password')");
+                $sth = $dbh->prepare("INSERT INTO users (role, email, image, username, password, first_name, last_name) VALUES('admin', '$email', '/assets/images/user.png', '$username', '$password', '', '')");
         
                 $sth->execute();
                 
-                $sth = $dbh->prepare("INSERT INTO settings VALUES('', '$title', '$email')");
+                $sth = $dbh->prepare("INSERT INTO settings (title, admin_email) VALUES('$title', '$email')");
         
                 $sth->execute();
 
@@ -96,9 +96,9 @@ if ( $step == 2 && !empty( $_POST ) ) {
                 
                 $date = date("Y-m-d");
                 
-                $sth = $dbh->prepare("INSERT INTO notifications VALUES('', 'зарегистрировался', '/user/$username', '$date', '$_SESSION[authorized]')");
+                $sth = $dbh->prepare("INSERT INTO notifications (content, action_url, date, author_id) VALUES('зарегистрировался', '/user/$username', '$date', '$_SESSION[authorized]')");
         
-                $sth->execute();     
+                $sth->execute();  
                 
                 header("Location: /install/install?step=3");
             
