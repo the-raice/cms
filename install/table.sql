@@ -1,31 +1,23 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.3
+-- version 4.9.7
 -- https://www.phpmyadmin.net/
 --
--- Хост: 127.0.0.1:3306
--- Время создания: Мар 23 2019 г., 07:00
--- Версия сервера: 5.6.37
--- Версия PHP: 7.0.21
+-- Host: localhost:8889
+-- Generation Time: Jun 05, 2021 at 05:31 AM
+-- Server version: 5.7.32
+-- PHP Version: 7.4.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
 --
--- База данных: `cms`
+-- Database: `bd`
 --
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `actions`
+-- Table structure for table `actions`
 --
 
 CREATE TABLE `actions` (
@@ -38,7 +30,7 @@ CREATE TABLE `actions` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `articles`
+-- Table structure for table `articles`
 --
 
 CREATE TABLE `articles` (
@@ -53,7 +45,7 @@ CREATE TABLE `articles` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `comments`
+-- Table structure for table `comments`
 --
 
 CREATE TABLE `comments` (
@@ -70,7 +62,7 @@ CREATE TABLE `comments` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `courses`
+-- Table structure for table `courses`
 --
 
 CREATE TABLE `courses` (
@@ -90,7 +82,7 @@ CREATE TABLE `courses` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `lessons`
+-- Table structure for table `lessons`
 --
 
 CREATE TABLE `lessons` (
@@ -106,7 +98,7 @@ CREATE TABLE `lessons` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `notifications`
+-- Table structure for table `notifications`
 --
 
 CREATE TABLE `notifications` (
@@ -120,7 +112,7 @@ CREATE TABLE `notifications` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `pages`
+-- Table structure for table `pages`
 --
 
 CREATE TABLE `pages` (
@@ -135,7 +127,7 @@ CREATE TABLE `pages` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `purchases`
+-- Table structure for table `purchases`
 --
 
 CREATE TABLE `purchases` (
@@ -148,21 +140,19 @@ CREATE TABLE `purchases` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `settings`
+-- Table structure for table `settings`
 --
 
 CREATE TABLE `settings` (
-  `id` int(11) NOT NULL,
+  `id` bigint(20) UNSIGNED NOT NULL,
   `title` varchar(255) NOT NULL,
-  `admin_email` varchar(255) NOT NULL,
-  `registration_type` varchar(255) NOT NULL,
-  `description` text NOT NULL
+  `admin_email` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `steps`
+-- Table structure for table `steps`
 --
 
 CREATE TABLE `steps` (
@@ -176,7 +166,7 @@ CREATE TABLE `steps` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -191,136 +181,142 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Индексы сохранённых таблиц
+-- Indexes for dumped tables
 --
 
 --
--- Индексы таблицы `actions`
+-- Indexes for table `actions`
 --
 ALTER TABLE `actions`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Индексы таблицы `articles`
+-- Indexes for table `articles`
 --
 ALTER TABLE `articles`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Индексы таблицы `comments`
+-- Indexes for table `comments`
 --
 ALTER TABLE `comments`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Индексы таблицы `courses`
+-- Indexes for table `courses`
 --
 ALTER TABLE `courses`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Индексы таблицы `lessons`
+-- Indexes for table `lessons`
 --
 ALTER TABLE `lessons`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Индексы таблицы `notifications`
+-- Indexes for table `notifications`
 --
 ALTER TABLE `notifications`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Индексы таблицы `pages`
+-- Indexes for table `pages`
 --
 ALTER TABLE `pages`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Индексы таблицы `purchases`
+-- Indexes for table `purchases`
 --
 ALTER TABLE `purchases`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Индексы таблицы `settings`
+-- Indexes for table `settings`
 --
 ALTER TABLE `settings`
-  ADD PRIMARY KEY (`id`);
+  ADD UNIQUE KEY `id` (`id`);
 
 --
--- Индексы таблицы `steps`
+-- Indexes for table `steps`
 --
 ALTER TABLE `steps`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Индексы таблицы `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD UNIQUE KEY `id` (`id`);
+  ADD UNIQUE KEY `id` (`id`),
+  ADD UNIQUE KEY `id_2` (`id`);
 
 --
--- AUTO_INCREMENT для сохранённых таблиц
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT для таблицы `actions`
+-- AUTO_INCREMENT for table `actions`
 --
 ALTER TABLE `actions`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
--- AUTO_INCREMENT для таблицы `articles`
+-- AUTO_INCREMENT for table `articles`
 --
 ALTER TABLE `articles`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
--- AUTO_INCREMENT для таблицы `comments`
+-- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
--- AUTO_INCREMENT для таблицы `courses`
+-- AUTO_INCREMENT for table `courses`
 --
 ALTER TABLE `courses`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
--- AUTO_INCREMENT для таблицы `lessons`
+-- AUTO_INCREMENT for table `lessons`
 --
 ALTER TABLE `lessons`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
--- AUTO_INCREMENT для таблицы `notifications`
+-- AUTO_INCREMENT for table `notifications`
 --
 ALTER TABLE `notifications`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
--- AUTO_INCREMENT для таблицы `pages`
+-- AUTO_INCREMENT for table `pages`
 --
 ALTER TABLE `pages`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
--- AUTO_INCREMENT для таблицы `purchases`
+-- AUTO_INCREMENT for table `purchases`
 --
 ALTER TABLE `purchases`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
--- AUTO_INCREMENT для таблицы `settings`
+-- AUTO_INCREMENT for table `settings`
 --
 ALTER TABLE `settings`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
--- AUTO_INCREMENT для таблицы `steps`
+-- AUTO_INCREMENT for table `steps`
 --
 ALTER TABLE `steps`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
--- AUTO_INCREMENT для таблицы `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
