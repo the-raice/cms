@@ -129,7 +129,7 @@ class User
         
     }
     
-    public function isEditor( $id, $author_id )
+    public static function isEditor( $id, $author_id )
     {
         
         session_start();
